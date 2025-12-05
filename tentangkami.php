@@ -13,7 +13,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
 
-  <title>Tentang Kami - Barudak Group</title>
+  <title>Tentang Kami - sakha diamond</title>
 </head>
 
 <body class="bg-white">
@@ -24,7 +24,7 @@
 
     <!-- Logo -->
     <a href="index.php" class="flex items-center gap-3">
-      <img src="./public/logo/logo2.png" alt="Logo Barudak Group" width="48" height="48" class="h-12 w-auto" />
+      <img src="./public/logo/logo2.png" alt="" width="48" height="48" class="h-12 w-auto" />
     </a>
 
     <!-- Menu -->
@@ -38,12 +38,12 @@
 
     <!-- Icons -->
     <div class="flex gap-3">
-      <a href="https://www.instagram.com/halobarudakgroup01/" target="_blank"
+      <a href="" target="_blank"
         class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
         <i class="fab fa-instagram"></i>
       </a>
 
-      <a href="https://www.tiktok.com/@halobarudakgroup01" target="_blank"
+      <a href="" target="_blank"
         class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
         <i class="fab fa-tiktok"></i>
       </a>
@@ -60,7 +60,7 @@
       <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
         <i class="fas fa-users text-2xl text-green-600"></i>
       </div>
-      <h2 class="text-3xl font-bold text-green-700 mb-4">Tentang Barudak Group</h2>
+      <h2 class="text-3xl font-bold text-green-700 mb-4">Tentang sakha diamond</h2>
       <p class="text-gray-600 max-w-2xl mx-auto">Dipercaya ribuan jamaah sejak 2023</p>
     </div>
 
@@ -75,7 +75,7 @@
           </h3>
 
           <p class="text-gray-600 leading-relaxed text-justify">
-            Halo Barudak Group berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
+            sakha diamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
             <span class="font-bold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan. Kami hadir untuk
             mengubah pandangan masyarakat bahwa ibadah Umrah adalah hal yang rumit dan penuh kekhawatiran.
             Filosofi pelayanan kami:
@@ -125,7 +125,7 @@
       <div class="flex flex-col items-center">
         <div class="relative">
           <div class="h-60 w-60 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-            <img src="./public/images/IMG_5766.jpg" alt="Owner Halo Barudak Group" class="h-60 w-60 object-cover rounded-2xl hover:scale-105 transition-transform duration-300 shadow-md" />
+            <img src="./public/images/.jpg" alt="Owner sakha diamond" class="h-60 w-60 object-cover rounded-2xl hover:scale-105 transition-transform duration-300 shadow-md" />
           </div>
 
           <div class="absolute -top-4 -right-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
@@ -134,7 +134,7 @@
         </div>
 
         <div class="text-center">
-          <h5>Yuda Hidayat, Lc.</h5>
+          <h5>Algipari.</h5>
           <h4 class="font-bold text-lg text-gray-800 mb-2">Owner PT. Berkah Mekah Madinah</h4>
           <p class="text-gray-600">Berpengalaman 3+ tahun</p>
         </div>
@@ -163,15 +163,15 @@
         </p>
 
         <div class="flex gap-3">
-          <a href="https://www.tiktok.com/@halobarudakgroup01" target="_blank"
+          <a href="" target="_blank"
             class="w-10 h-10 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110">
             <i class="fab fa-tiktok text-white"></i>
           </a>
-          <a href="https://www.instagram.com/halobarudakgroup01" target="_blank"
+          <a href="" target="_blank"
             class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110">
             <i class="fab fa-instagram text-white"></i>
           </a>
-          <a href="https://wa.me/6282119081443" target="_blank"
+          <a href="https://wa.me/+62812938060" target="_blank"
             class="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center transition hover:scale-110">
             <i class="fab fa-whatsapp text-white"></i>
           </a>
@@ -191,12 +191,12 @@
       <div>
         <h4 class="font-semibold text-lg mb-4 text-green-400">Kontak</h4>
         <ul class="space-y-3 text-gray-300">
-          <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400"></i><span>+62 821 1908 1443</span></li>
-          <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400"></i><span>+62 817 7926 2637</span></li>
-          <li class="flex items-center gap-2"><i class="fas fa-envelope text-green-400"></i><span>halobarudakgroup@gmail.com</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400"></i><span>+62 812938060</span></li>
+          <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400"></i><span>+62 812938060</span></li>
+          <li class="flex items-center gap-2"><i class="fas fa-envelope text-green-400"></i><span>sakhadiamond</span></li>
           <li class="flex items-center gap-2">
             <i class="fas fa-map-marker-alt text-green-400"></i>
-            <span>Perum Grand Living, Jl. Cicantel, Tasikmalaya, Jawa Barat 46191</span>
+            <span>Cipasung</span>
           </li>
         </ul>
       </div>

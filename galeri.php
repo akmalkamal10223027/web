@@ -22,7 +22,7 @@
     <a href="index.php" class="flex items-center gap-3">
       <img
         src="./public/logo/logo2.png"
-        alt="Logo Barudak Group"
+        alt="logo2"
         width="48"
         height="48"
         class="h-12 w-auto"
@@ -66,7 +66,7 @@
      <!-- Icons -->
     <div class="flex gap-3">
       <a
-        href="https://www.instagram.com/halobarudakgroup01/"
+        href="/"
         target="_blank"
         class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition"
       >
@@ -74,7 +74,7 @@
       </a>
 
       <a
-        href="https://www.tiktok.com/@halobarudakgroup01"
+        href=""
         target="_blank"
         class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition"
       >
@@ -99,7 +99,7 @@
               Galeri Perjalanan
             </h2>
             <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-              Dokumentasi momen berharga perjalanan ibadah bersama Barudak Group
+              Dokumentasi momen berharga perjalanan ibadah bersama sakhadiamond
             </p>
           </div>
 
@@ -112,7 +112,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_2045.jpg"
+                  src="./public/gallery/"
                   alt="Masjidil Haram"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -142,7 +142,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_1995.jpg"
+                  src="./public/gallery/.jpg"
                   alt="Keberangkatan Jamaah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -172,7 +172,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_2241.jpg"
+                  src="./public/gallery/.jpg"
                   alt="Hotel Makkah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
