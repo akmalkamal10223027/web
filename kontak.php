@@ -286,3 +286,90 @@
               </a>
             </div>
           </div>
+<div>
+            <h4 class="font-semibold text-lg mb-4 text-green-400">
+              Paket Populer
+            </h4>
+            <ul class="space-y-2 text-gray-300">
+              <li>
+                <a
+                  href="#paket"
+                  class="hover:text-green-400 transition flex items-center gap-2"
+                >
+                  <i class="fas fa-mosque text-xs"></i> Umrah Reguler
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#paket"
+                  class="hover:text-green-400 transition flex items-center gap-2"
+                >
+                  <i class="fas fa-globe-europe text-xs"></i> Umrah Plus Turki
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#paket"
+                  class="hover:text-green-400 transition flex items-center gap-2"
+                >
+                  <i class="fas fa-city text-xs"></i> Umrah Private
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#paket"
+                  class="hover:text-green-400 transition flex items-center gap-2"
+                >
+                  <i class="fas fa-kaaba text-xs"></i> Haji Khusus
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold text-lg mb-4 text-green-400">Kontak</h4>
+            <ul class="space-y-3 text-gray-300">
+              <li class="flex items-center gap-2">
+                <i class="fas fa-phone text-green-400"></i>
+                <span>+62 821 1908 1443</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fab fa-whatsapp text-green-400"></i>
+                <span>+62 817 7926 2637</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-envelope text-green-400"></i>
+                <span>halobarudakgroup@gmail.com</span>
+              </li>
+              <li class="flex items-center gap-2">
+                <i class="fas fa-map-marker-alt text-green-400"></i>
+                <span
+                  >Perum grand Living, Jl. Cicantel, RT.06/RW.08,
+                  Kelurahan:Mulyasari, Kecamatan:Tamansari Kota: Tasikmalaya,
+                  Jawa Barat 46191</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+          <p class="text-gray-400">
+            &copy; 2025 Sakha Diamond. All rights reserved. |
+            <a href="#" class="text-green-400 hover:underline"
+              >Privacy Policy</a
+            >
+            |
+            <a href="#" class="text-green-400 hover:underline"
+              >Terms of Service</a
+            >
+          </p>
+          <p class="text-sm text-gray-500 mt-2">
+            <i class="fas fa-certificate text-green-400 mr-1"></i>
+            Terdaftar resmi dan berizin lengkap
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
