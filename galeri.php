@@ -225,3 +225,92 @@
                 <i class="fas fa-eye mr-1"></i>Lihat
               </div>
             </div>
+ <!-- Jabal Rahmah -->
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
+                <img
+                  src="./public/gallery/jabalrohmah.jpg"
+                  alt="Jabal Rahmah"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <h3 class="font-bold text-sm sm:text-base mb-1">
+                    Jabal Rahmah
+                  </h3>
+                  <p class="text-xs sm:text-sm opacity-90">
+                    Wukuf di Arafah yang penuh khidmat
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute top-3 right-3 bg-red-500 text-white px-2 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transition-all"
+              >
+                <i class="fas fa-eye mr-1"></i>Lihat
+              </div>
+            </div>
+
+            <!-- Kuliner Khas -->
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
+                <img
+                  src="./public/paket/romansiah.jpg"
+                  alt="Kuliner Khas"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <h3 class="font-bold text-sm sm:text-base mb-1">
+                    Kuliner Khas
+                  </h3>
+                  <p class="text-xs sm:text-sm opacity-90">
+                    Makanan halal dan bergizi
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute top-3 right-3 bg-indigo-500 text-white px-2 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transition-all"
+              >
+                <i class="fas fa-eye mr-1"></i>Lihat
+              </div>
+            </div>
+
+            <!-- Wisata Plus -->
+            <div
+              class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
+                <img
+                  src="./public/gallery/IMG_2007.jpg"
+                  alt="Wisata Plus"
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+              </div>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"
+              >
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <h3 class="font-bold text-sm sm:text-base mb-1">
+                    Wisata Plus
+                  </h3>
+                  <p class="text-xs sm:text-sm opacity-90">
+                    Explore tempat bersejarah Islam
+                  </p>
+                </div>
+              </div>
+              <div
+                class="absolute top-3 right-3 bg-teal-500 text-white px-2 py-1 rounded-full text-xs font-semibold opacity-0 group-hover:opacity-100 transition-all"
+              >
+                <i class="fas fa-eye mr-1"></i>Lihat
+              </div>
+            </div>
