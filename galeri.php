@@ -10,7 +10,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
-
+ <link rel="icon" type="image/x-icon" href="./public/logo/logo2.png" />
+    <link
+    />
   <title>Galeri - Sakha Diamond</title>
 </head>
 
@@ -22,13 +24,13 @@
     <a href="index.php" class="flex items-center gap-3">
       <img
         src="./public/logo/logo2.png"
-        alt="logo2"
+        alt="Logo Barudak Group"
         width="48"
         height="48"
         class="h-12 w-auto"
       />
     </a>
-    
+
     <!-- Menu -->
     <ul class="hidden md:flex gap-6 font-medium">
 
@@ -63,10 +65,10 @@
       </li>
     </ul>
 
-     <!-- Icons -->
+    <!-- Icons -->
     <div class="flex gap-3">
       <a
-        href="/"
+        href="https://www.instagram.com/halobarudakgroup01/"
         target="_blank"
         class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition"
       >
@@ -74,7 +76,7 @@
       </a>
 
       <a
-        href=""
+        href="https://www.tiktok.com/@halobarudakgroup01"
         target="_blank"
         class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition"
       >
@@ -99,7 +101,7 @@
               Galeri Perjalanan
             </h2>
             <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-              Dokumentasi momen berharga perjalanan ibadah bersama sakhadiamond
+              Dokumentasi momen berharga perjalanan ibadah bersama Barudak Group
             </p>
           </div>
 
@@ -112,7 +114,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/"
+                  src="./public/gallery/IMG_2045.jpg"
                   alt="Masjidil Haram"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -142,7 +144,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/.jpg"
+                  src="./public/gallery/IMG_1995.jpg"
                   alt="Keberangkatan Jamaah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -172,7 +174,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/.jpg"
+                  src="./public/gallery/IMG_2241.jpg"
                   alt="Hotel Makkah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -225,7 +227,8 @@
                 <i class="fas fa-eye mr-1"></i>Lihat
               </div>
             </div>
- <!-- Jabal Rahmah -->
+
+            <!-- Jabal Rahmah -->
             <div
               class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
             >
@@ -314,7 +317,8 @@
                 <i class="fas fa-eye mr-1"></i>Lihat
               </div>
             </div>
-             <!-- Momen Bahagia -->
+
+            <!-- Momen Bahagia -->
             <div
               class="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
             >
@@ -386,7 +390,7 @@
               </div>
             </div>
           </div>
-           <!-- Footer -->
+            <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-8">
@@ -394,7 +398,7 @@
             <div class="flex items-center gap-3 mb-4">
               <div>
                 <img
-                  src="./public/logo/barudak-group.png"
+                  src="./public/logo/logo2.png"
                   alt="Sakha Diamond Logo"
                   class="h-15 w-12"
                 />
@@ -415,21 +419,21 @@
             </p>
             <div class="flex gap-3">
               <a
-                href="https://www.tiktok.com/@halobarudakgroup01"
+                href=""
                 target="_blank"
                 class="w-10 h-10 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110"
               >
                 <i class="fab fa-tiktok text-white"></i>
               </a>
               <a
-                href="https://www.instagram.com/halobarudakgroup01"
+                href=""
                 target="_blank"
                 class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110"
               >
                 <i class="fab fa-instagram text-white"></i>
               </a>
               <a
-                href="https://wa.me/6282119081443"
+                href="https://wa.me/6282130938060"
                 target="_blank"
                 class="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center transition hover:scale-110"
               >
@@ -496,9 +500,7 @@
               <li class="flex items-center gap-2">
                 <i class="fas fa-map-marker-alt text-green-400"></i>
                 <span
-                  >Perum grand Living, Jl. Cicantel, RT.06/RW.08,
-                  Kelurahan:Mulyasari, Kecamatan:Tamansari Kota: Tasikmalaya,
-                  Jawa Barat 46191</span
+                  >Cipasung</span
                 >
               </li>
             </ul>
