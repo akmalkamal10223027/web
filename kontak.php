@@ -10,9 +10,13 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
   />
+  <link rel="icon" type="image/x-icon" href="./public/logo/logo2.png" />
+    <link
+    />
 
   <title>Kontak - Sakha Diamond</title>
 </head>
+
 
 <!-- Navbar -->
 <nav class="bg-white shadow sticky top-0 z-50">
@@ -65,7 +69,7 @@
     <!-- Icons -->
     <div class="flex gap-3">
       <a
-        href="https://www.instagram.com/halobarudakgroup01/"
+        href=""
         target="_blank"
         class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition"
       >
@@ -73,7 +77,7 @@
       </a>
 
       <a
-        href="https://www.tiktok.com/@halobarudakgroup01"
+        href=""
         target="_blank"
         class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition"
       >
@@ -114,7 +118,7 @@
                     <i class="fab fa-whatsapp text-white text-xl"></i>
                   </div>
                   <div>
-                    <a href="https://wa.me/6281779262637" target="_blank">
+                    <a href="https://wa.me/6282130938060" target="_blank">
                       <h4 class="font-semibold text-lg">WhatsApp Admin</h4>
                       <p class="text-green-200">Respon cepat 24/7</p>
                     </a>
@@ -130,7 +134,7 @@
                     <i class="fas fa-phone text-white text-xl"></i>
                   </div>
                   <div>
-                    <a href="tel:6285932988652" target="_blank">
+                    <a href="tel:6282130938060" target="_blank">
                       <h4 class="font-semibold text-lg">Telepon Kantor</h4>
                     </a>
                   </div>
@@ -147,8 +151,7 @@
                   <div>
                     <h4 class="font-semibold text-lg">Alamat Kantor</h4>
                     <p class="text-green-200">
-                      Perum Grand Living Cicantel RT 06 RW 08, Kelurahan
-                      Mulyasari, Kecamatan Tamansari, Kota Tasikmalaya, 46191
+                      Cipasung
                     </p>
                   </div>
                 </div>
@@ -172,34 +175,14 @@
 
               <div class="flex gap-4 mt-8">
                 <a
-                  href="https://www.tiktok.com/@halobarudakgroup01"
+                  href=""
                   target="_blank"
                   class="w-12 h-12 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110"
                 >
                   <i class="fab fa-tiktok text-white text-xl"></i>
                 </a>
                 <a
-                  href="https://www.instagram.com/halobarudakgroup01"
-                  target="_blank"
-                  class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110"
-                >
-                  <i class="fab fa-instagram text-white text-xl"></i>
-                </a>
-              </div>
-            </div>
- </a>
-              </div>
-
-              <div class="flex gap-4 mt-8">
-                <a
-                  href="https://www.tiktok.com/@halobarudakgroup01"
-                  target="_blank"
-                  class="w-12 h-12 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110"
-                >
-                  <i class="fab fa-tiktok text-white text-xl"></i>
-                </a>
-                <a
-                  href="https://www.instagram.com/halobarudakgroup01"
+                  href=""
                   target="_blank"
                   class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110"
                 >
@@ -217,7 +200,7 @@
               </h3>
               <div class="text-center">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSfv9PL5YU0iLU2ML3oEeNzIovXaD3N5u-UzF1s6VaumdMjs0Q/viewform?usp=header"
+                  href=""
                   target="_blank"
                   class="inline-flex items-center gap-3 bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:scale-105"
                 >
@@ -264,21 +247,21 @@
             </p>
             <div class="flex gap-3">
               <a
-                href="https://www.tiktok.com/@halobarudakgroup01"
+                href=""
                 target="_blank"
                 class="w-10 h-10 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110"
               >
                 <i class="fab fa-tiktok text-white"></i>
               </a>
               <a
-                href="https://www.instagram.com/halobarudakgroup01"
+                href=""
                 target="_blank"
                 class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110"
               >
                 <i class="fab fa-instagram text-white"></i>
               </a>
               <a
-                href="https://wa.me/6282119081443"
+                href="https://wa.me/621130938060"
                 target="_blank"
                 class="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center transition hover:scale-110"
               >
@@ -286,7 +269,8 @@
               </a>
             </div>
           </div>
-<div>
+
+          <div>
             <h4 class="font-semibold text-lg mb-4 text-green-400">
               Paket Populer
             </h4>
@@ -335,18 +319,16 @@
               </li>
               <li class="flex items-center gap-2">
                 <i class="fab fa-whatsapp text-green-400"></i>
-                <span>+62 817 7926 2637</span>
+                <span>+62 82130938060</span>
               </li>
               <li class="flex items-center gap-2">
                 <i class="fas fa-envelope text-green-400"></i>
-                <span>halobarudakgroup@gmail.com</span>
+                <span>sakhadiamond</span>
               </li>
               <li class="flex items-center gap-2">
                 <i class="fas fa-map-marker-alt text-green-400"></i>
                 <span
-                  >Perum grand Living, Jl. Cicantel, RT.06/RW.08,
-                  Kelurahan:Mulyasari, Kecamatan:Tamansari Kota: Tasikmalaya,
-                  Jawa Barat 46191</span
+                  >Cipasung</span
                 >
               </li>
             </ul>

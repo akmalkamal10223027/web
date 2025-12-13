@@ -208,7 +208,7 @@
     <a href="index.php" class="flex items-center gap-3">
       <img
         src="./public/logo/logo2.png"
-        alt=""
+        alt="Sakha Diamond"
         width="48"
         height="48"
         class="h-12 w-auto"
@@ -268,6 +268,8 @@
     </div>
 
   </div>
+</nav>
+
 </nav>
     <!-- Main Content -->
     <main>
