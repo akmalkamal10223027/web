@@ -115,7 +115,7 @@
                       class="h-48 w-full bg-gradient-to-br from-green-50 to-green-100 rounded-lg overflow-hidden"
                     >
                       <img
-                        src="./public/gallery/IMG_2045.jpg"
+                        src="./public/images/poster3.jpg.jpg"
                         alt="Umrah Reguler"
                         class="h-full w-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       />
@@ -174,7 +174,7 @@
                       class="h-48 w-full bg-gradient-to-br from-green-50 to-green-100 rounded-lg overflow-hidden"
                     >
                       <img
-                        src="./public/gallery/IMG_2241.jpg"
+                        src="./public/images/poster3.jpg"
                         alt="Umrah Reguler"
                         class="h-full w-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       />
@@ -235,7 +235,7 @@
                       class="h-48 w-full bg-gradient-to-br from-green-50 to-green-100 rounded-lg overflow-hidden"
                     >
                       <img
-                        src="./public/gallery/"
+                        src="./public/images/poster3.jpg"
                         alt="Umrah Reguler"
                         class="h-full w-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       />
@@ -292,7 +292,7 @@
                       class="h-48 w-full bg-gradient-to-br from-green-50 to-green-100 rounded-lg overflow-hidden"
                     >
                       <img
-                        src="./public/paket/"
+                        src="./public/images/poster3.jpg"
                         alt="Umrah Reguler"
                         class="h-full w-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
                       />
@@ -336,7 +336,7 @@
                     <a
                       href="
                     >
-                      <i class="fas fa-external-link-alt"></i> Daftar Sekarang
+                      <i class="fas fa-external-link-alt></i> Daftar Sekarang
                     </a>
                   </button>
                 </div>

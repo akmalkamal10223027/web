@@ -384,7 +384,7 @@
                 <a
                   href="kontak.php"
   
-                  class="group bg-transparent border-2 border-green-300 hover:bg-green-300 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 "
+                  class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 "
                   
                 >
                   <i
@@ -456,11 +456,21 @@
           </div>
         </div>
       </section>
+    <!--sjksdasdasd-->
+    <section class="bg-green-700 text-white text-center py-10 mt-8">
+  <h2 class="text-2xl font-bold">AHLAN WA SAHLAN</h2>
+  <p class="max-w-3xl mx-auto mt-4 text-base leading-relaxed">
+    Selamat datang di Sakha Diamond, biro perjalanan ibadah
+    yang mengutamakan kenyamanan dan keikhlasan.
+  </p>
+</section>
+
+
        <!-- Highlight Paket Umrah -->
-      <section class="container mx-auto py-16 px-4" id="highlight-paket">
+      <section class="container mx-auto py-6 px-4" id="highlight-paket">
         <div class="text-center mb-12">
           <div
-            class="inline-flex items-center justify-center w-16 h-16 bg-green-300 rounded-full mb-4"
+            class="inline-flex items-center justify-center w-16 h-16 bg-green-300 rounded-full mb-4 mt-8"
           >
             <i class="fa-solid fa-bookmark text-green-800"></i>
           </div>
@@ -618,6 +628,93 @@
           </div>
         </div>
       </section>
+      <!-- Section Tentang Kami -->
+<section id="about" class="bg-gradient-to-br from-gray-50 to-white py-16 px-4">
+  <div class="container mx-auto">
+
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
+        <i class="fas fa-users text-2xl text-green-600"></i>
+      </div>
+      <h2 class="text-3xl font-bold text-green-700 mb-4">Tentang sakhadiamond</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">Dipercaya ribuan jamaah sejak 2023</p>
+    </div>
+
+    <!-- Grid 2 Kolom -->
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- Kolom Kiri -->
+      <div>
+        <div class="mb-6">
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+            <i class="fas fa-history text-green-600"></i> Sejarah Kami
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed text-justify">
+            sakhadiamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
+            <span class="font-bold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan. Kami hadir untuk
+            mengubah pandangan masyarakat bahwa ibadah Umrah adalah hal yang rumit dan penuh kekhawatiran.
+            Filosofi pelayanan kami:
+            <span class="italic font-medium text-green-700">"Umrah mudah, penuh berkah"</span>.
+          </p>
+        </div>
+
+        <!-- Keunggulan -->
+        <div class="space-y-4">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <i class="fas fa-check-circle text-green-600"></i> Keunggulan Kami
+          </h3>
+
+          <div class="grid gap-3">
+            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-user-tie text-white"></i>
+              </div>
+              <span class="text-gray-700">Tim berpengalaman & profesional</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-hands-helping text-white"></i>
+              </div>
+              <span class="text-gray-700">Pendampingan ibadah dari awal hingga akhir</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-network-wired text-white"></i>
+              </div>
+              <span class="text-gray-700">Jaringan hotel & maskapai terbaik</span>
+            </div>
+
+            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-shield-alt text-white"></i>
+              </div>
+              <span class="text-gray-700">Terdaftar resmi & berizin lengkap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan -->
+      <div class="flex flex-col items-center">
+        <div class="relative">
+          <div class="h-60 w-60 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
+            <img src="./public/images/IMG_5766.jpg" alt="Owner Halo Barudak Group" class="h-60 w-60 object-cover rounded-2xl hover:scale-105 transition-transform duration-300 shadow-md" />
+          </div>
+
+          <div class="absolute -top-4 -right-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
+            <i class="fas fa-certificate text-white text-xl"></i>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <h5>Algipari, Lc.</h5>
+          <h4 class="font-bold text-lg text-gray-800 mb-2">Owner PT. Sakha Diamond</h4>
+          <p class="text-gray-600">Berpengalaman 3+ tahun</p>
+        </div>
+      </div>    
     
       <!-- Section Testimoni & Dokumentasi -->
       <section

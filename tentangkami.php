@@ -15,7 +15,7 @@
  <link rel="icon" type="image/x-icon" href="./public/logo/logo2.png" />
     <link
     />
-  <title>Tentang Kami - Barudak Group</title>
+  <title>Tentang Kami - sakhadiamond</title>
 </head>
 
 <body class="bg-white">
@@ -54,97 +54,101 @@
   </div>
 </nav>
 
-<!-- Section Tentang Kami -->
-<section id="about" class="bg-gradient-to-br from-gray-50 to-white py-16 px-4">
-  <div class="container mx-auto">
-
-    <div class="text-center mb-12">
-      <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-        <i class="fas fa-users text-2xl text-green-600"></i>
-      </div>
-      <h2 class="text-3xl font-bold text-green-700 mb-4">Tentang sakhadiamond</h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">Dipercaya ribuan jamaah sejak 2023</p>
+<!--profil kami-->
+<section class="container mx-auto px-4 py-16">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+    
+    <!-- KIRI : PROFIL -->
+    <div>
+      <h2 class="text-2xl font-bold mb-4">Profil</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+        Sed nisi. Nulla quis sem at nibh elementum imperdiet.
+        Duis sagittis ipsum. Praesent mauris.
+        <br><br>
+        Fusce nec tellus sed augue semper porta. Mauris massa.
+        Vestibulum lacinia arcu eget nulla.
+      </p>
     </div>
 
-    <!-- Grid 2 Kolom -->
-    <div class="grid md:grid-cols-2 gap-12 items-center">
+    <!-- KANAN : GAMBAR -->
+    <div class="flex justify-center">
+  <img
+    src="./public/images/poster1.jpg"
+    alt="Poster Umroh"
+    class="w-full max-w-md h-auto rounded-lg shadow-lg"
+  />
+</div>
 
-      <!-- Kolom Kiri -->
-      <div>
-        <div class="mb-6">
-          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
-            <i class="fas fa-history text-green-600"></i> Sejarah Kami
-          </h3>
+</section>
 
-          <p class="text-gray-600 leading-relaxed text-justify">
-            sakhadiamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
-            <span class="font-bold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan. Kami hadir untuk
-            mengubah pandangan masyarakat bahwa ibadah Umrah adalah hal yang rumit dan penuh kekhawatiran.
-            Filosofi pelayanan kami:
-            <span class="italic font-medium text-green-700">"Umrah mudah, penuh berkah"</span>.
-          </p>
+<!-- visi misi -->
+
+<section class="max-w-7xl mx-auto px-4 py-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+        <!-- Kiri: Visi & Misi -->
+        <div>
+            <h2 class="text-2xl font-bold mb-4 text-green-700">
+                Visi dan Misi
+            </h2>
+
+            <h3 class="font-semibold text-lg mb-2">Visi</h3>
+            <p class="text-gray-600 mb-4">
+                Menjadi penyelenggara layanan Umroh dan Haji yang amanah,
+                profesional, dan terpercaya.
+            </p>
+
+            <h3 class="font-semibold text-lg mb-2">Misi</h3>
+            <ul class="list-decimal ml-5 text-gray-600 space-y-2">
+                <li>Memberikan pelayanan terbaik kepada jamaah.</li>
+                <li>Menyediakan paket umroh yang aman dan nyaman.</li>
+                <li>Mengutamakan kepuasan dan kepercayaan jamaah.</li>
+                <li>Meningkatkan kualitas SDM secara berkelanjutan.</li>
+            </ul>
         </div>
+    </div>
+</section>
 
-        <!-- Keunggulan -->
-        <div class="space-y-4">
-          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-            <i class="fas fa-check-circle text-green-600"></i> Keunggulan Kami
-          </h3>
+<!-- Jumlah terdaftar -->
+ <section class="bg-green-700 py-12">
+    <div class="max-w-7xl mx-auto px-4 text-center text-white">
 
-          <div class="grid gap-3">
-            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-user-tie text-white"></i>
-              </div>
-              <span class="text-gray-700">Tim berpengalaman & profesional</span>
-            </div>
+        <h2 class="text-xl font-semibold mb-2">
+            Jumlah Jamaah Terdaftar
+        </h2>
 
-            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-hands-helping text-white"></i>
-              </div>
-              <span class="text-gray-700">Pendampingan ibadah dari awal hingga akhir</span>
-            </div>
+        <p class="text-5xl font-bold mb-4">
+            70
+        </p>
 
-            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-network-wired text-white"></i>
-              </div>
-              <span class="text-gray-700">Jaringan hotel & maskapai terbaik</span>
-            </div>
+        <p class="max-w-xl mx-auto text-green-100">
+            Jamaah yang telah mempercayakan perjalanan ibadah Umroh
+            bersama kami secara online dan offline.
+        </p>
 
-            <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-shield-alt text-white"></i>
-              </div>
-              <span class="text-gray-700">Terdaftar resmi & berizin lengkap</span>
-            </div>
-          </div>
+    </div>
+</section>
+
+<!-- peta -->
+
+<section class="bg-gray-100 py-6">
+   <h2 class="text-2xl font-bold mb-4 text-center text-green-800">
+        Lokasi Kantor Kami
+    </h2>
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="w-full h-[400px] rounded-lg overflow-hidden shadow-lg">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=..."
+                class="w-full h-full border-0"
+                loading="lazy">
+            </iframe>
         </div>
-      </div>
+    </div>
+</section>
 
-      <!-- Kolom Kanan -->
-      <div class="flex flex-col items-center">
-        <div class="relative">
-          <div class="h-60 w-60 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-            <img src="./public/images/IMG_5766.jpg" alt="Owner Halo Barudak Group" class="h-60 w-60 object-cover rounded-2xl hover:scale-105 transition-transform duration-300 shadow-md" />
-          </div>
 
-          <div class="absolute -top-4 -right-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
-            <i class="fas fa-certificate text-white text-xl"></i>
-          </div>
-        </div>
-
-        <div class="text-center">
-          <h5>Algipari, Lc.</h5>
-          <h4 class="font-bold text-lg text-gray-800 mb-2">Owner PT. Sakha Diamond</h4>
-          <p class="text-gray-600">Berpengalaman 3+ tahun</p>
-        </div>
-      </div>
-
-    </div> <!-- END grid -->
-  </div> <!-- END container -->
-</section> <!-- END section -->
 
 <!-- Footer -->
 <footer class="bg-gray-900 text-white py-12">
