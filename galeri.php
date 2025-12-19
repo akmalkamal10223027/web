@@ -114,7 +114,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_2045.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Masjidil Haram"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -144,7 +144,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_1995.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Keberangkatan Jamaah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -174,7 +174,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_2241.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Hotel Makkah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -204,7 +204,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/kegiatan-ibadah.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Kegiatan Ibadah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -234,7 +234,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/jabalrohmah.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Jabal Rahmah"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -264,7 +264,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/paket/romansiah.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Kuliner Khas"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -294,7 +294,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_2007.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Wisata Plus"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -324,7 +324,7 @@
             >
               <div class="h-48 sm:h-56 lg:h-48 relative overflow-hidden">
                 <img
-                  src="./public/gallery/IMG_2014.jpg"
+                  src="./public/images/poster3.jpg"
                   alt="Momen Bahagia"
                   class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                 />
@@ -390,7 +390,8 @@
               </div>
             </div>
           </div>
-            <!-- Footer -->
+
+     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
         <div class="grid md:grid-cols-4 gap-8">
@@ -491,11 +492,11 @@
               </li>
               <li class="flex items-center gap-2">
                 <i class="fab fa-whatsapp text-green-400"></i>
-                <span>+62 817 7926 2637</span>
+                <span>+62 82130938060</span>
               </li>
               <li class="flex items-center gap-2">
                 <i class="fas fa-envelope text-green-400"></i>
-                <span>halobarudakgroup@gmail.com</span>
+                <span>sakhadiamond@gmail.com</span>
               </li>
               <li class="flex items-center gap-2">
                 <i class="fas fa-map-marker-alt text-green-400"></i>
