@@ -24,7 +24,7 @@
     <a href="index.php" class="flex items-center gap-3">
       <img
         src="./public/logo/logo2.png"
-        alt="Logo Barudak Group"
+        alt="Logo Sakhadiamond"
         width="48"
         height="48"
         class="h-12 w-auto"
@@ -101,7 +101,7 @@
               Galeri Perjalanan
             </h2>
             <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto">
-              Dokumentasi momen berharga perjalanan ibadah bersama Barudak Group
+              Dokumentasi momen berharga perjalanan ibadah bersama Sakhadiamond
             </p>
           </div>
 
