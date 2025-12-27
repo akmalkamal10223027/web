@@ -22,7 +22,7 @@ $totalPembayaran = total($conn, 'pembayaran');
 <div class="mb-8">
     <h1 class="text-3xl font-semibold text-slate-800">Dashboard</h1>
     <p class="text-sm text-slate-500 mt-1">
-        Ringkasan data sistem COBA TRAVEL
+        Ringkasan data sistem Sakha Diamond
     </p>
 </div>
 
