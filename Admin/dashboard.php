@@ -21,10 +21,19 @@ $page = $_GET['page'] ?? 'home';
 
     <div class="flex min-h-screen">
         <aside class="w-64 bg-white border-r">
-            <div class="p-6 border-b">
-                <h1 class="text-xl font-bold text-blue-600">sakha diamond</h1>
-                <p class="text-sm text-slate-500">Admin Panel</p>
+            <div class="p-6 border-b flex items-center gap-3">
+                <img src="../assets/img/logo.png" alt="Sakha Diamond" class="w-10 h-10 object-contain">
+                <div class="leading-tight">
+                    <h1 class="text-sm font-semibold text-slate-800">
+                        Sakha Diamond
+                    </h1>
+                    <p class="text-xs text-slate-500">
+                        Admin Panel
+                    </p>
+                </div>
             </div>
+
+
 
             <nav class="p-4 space-y-2">
                 <a href="dashboard.php?page=home" class="block px-4 py-2 rounded hover:bg-slate-100">Halaman Utama</a>
