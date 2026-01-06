@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__ . "/../config/koneksi.php";
 
-
 /* =======================
    PROSES SIMPAN DATA
 ======================= */
@@ -23,7 +22,7 @@ if (isset($_POST['simpan'])) {
         move_uploaded_file($tmp, "../assets/img/" . $gambar);
     }
 
-    mysqli_query($conn, "INSERT INTO program_haji (
+    mysqli_query($conn, "INSERT INTO semua_paket (
         judul,
         durasi,
         harga,
@@ -31,8 +30,7 @@ if (isset($_POST['simpan'])) {
         hotel_madinah,
         maskapai,
         sisa_seat,
-        gambar,
-        status
+        gambar
     ) VALUES (
         '$judul',
         '$durasi',
@@ -41,11 +39,10 @@ if (isset($_POST['simpan'])) {
         '$hotel_madinah',
         '$maskapai',
         '$sisa_seat',
-        '$gambar',
-        'aktif'
+        '$gambar'
     )");
 
-    header("Location: dashboard.php?page=program_haji");
+    header("Location: dashboard.php?page=semua_paket");
     exit;
 }
 ?>
@@ -55,7 +52,7 @@ if (isset($_POST['simpan'])) {
 
 <head>
     <meta charset="UTF-8">
-    <title>Tambah Program Haji</title>
+    <title>Tambah Semua Paket</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
@@ -66,10 +63,10 @@ if (isset($_POST['simpan'])) {
         <!-- HEADER -->
         <div class="px-8 py-6 border-b">
             <h2 class="text-2xl font-semibold text-slate-800">
-                Tambah Program Haji
+                Tambah Semua Paket
             </h2>
             <p class="text-sm text-slate-500 mt-1">
-                Lengkapi data program haji yang akan ditampilkan ke user
+                Lengkapi data semua paket (Umroh, Haji, dan lainnya)
             </p>
         </div>
 
@@ -78,7 +75,7 @@ if (isset($_POST['simpan'])) {
 
             <div>
                 <label class="block text-sm font-medium text-slate-700 mb-1">
-                    Judul Program
+                    Judul Paket
                 </label>
                 <input name="judul" required
                     class="w-full rounded-xl border px-4 py-2 focus:ring-2 focus:ring-slate-800">
@@ -87,12 +84,12 @@ if (isset($_POST['simpan'])) {
             <div class="grid md:grid-cols-2 gap-4">
                 <div>
                     <label class="text-sm font-medium">Durasi</label>
-                    <input name="durasi" placeholder="40 Hari" class="w-full rounded-xl border px-4 py-2">
+                    <input name="durasi" placeholder="12 Hari" class="w-full rounded-xl border px-4 py-2">
                 </div>
 
                 <div>
                     <label class="text-sm font-medium">Harga</label>
-                    <input name="harga" placeholder="120000000" class="w-full rounded-xl border px-4 py-2">
+                    <input name="harga" placeholder="25000000" class="w-full rounded-xl border px-4 py-2">
                 </div>
             </div>
 
@@ -119,19 +116,19 @@ if (isset($_POST['simpan'])) {
             </div>
 
             <div>
-                <label class="text-sm font-medium">Gambar Program</label>
+                <label class="text-sm font-medium">Gambar Paket</label>
                 <input type="file" name="gambar" class="w-full rounded-xl border px-4 py-2 bg-white">
             </div>
 
             <!-- ACTION -->
             <div class="flex justify-end gap-3 pt-4">
-                <a href="dashboard.php?page=program_haji"
+                <a href="dashboard.php?page=semua_paket"
                     class="px-5 py-2 rounded-xl border text-slate-700 hover:bg-slate-100">
                     Batal
                 </a>
 
                 <button name="simpan" class="px-6 py-2 rounded-xl bg-slate-900 text-white hover:bg-slate-800 shadow">
-                    Simpan Program
+                    Simpan Paket
                 </button>
             </div>
 
