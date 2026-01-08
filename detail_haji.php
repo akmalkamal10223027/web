@@ -114,39 +114,64 @@ if (!$p) {
     </section>
 
     <!-- DETAIL -->
-    <section class="max-w-7xl mx-auto px-6 py-14 grid lg:grid-cols-2 gap-12">
+    <section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-14 items-start">
 
         <!-- GAMBAR -->
-        <div class="rounded-2xl overflow-hidden shadow bg-white">
-            <img src="assets/img/<?= htmlspecialchars($p['gambar']); ?>" class="w-full h-[420px] object-cover">
+        <div class="bg-white rounded-3xl shadow-lg p-6 flex items-center justify-center">
+            <div class="w-full h-[420px] bg-gray-100 rounded-2xl flex items-center justify-center overflow-hidden">
+                <img src="assets/img/<?= htmlspecialchars($p['gambar']); ?>" alt="<?= htmlspecialchars($p['judul']); ?>"
+                    class="max-w-full max-h-full object-contain">
+            </div>
         </div>
 
         <!-- INFO -->
-        <div class="bg-white rounded-2xl shadow p-8 space-y-5">
+        <div class="bg-white rounded-3xl shadow-lg p-8 space-y-6">
 
-            <div class="flex justify-between border-b pb-4">
-                <h2 class="text-2xl font-semibold">Detail Paket</h2>
-                <span class="text-2xl font-bold text-green-700">
+            <!-- HEADER -->
+            <div class="flex items-center justify-between border-b pb-4">
+                <h2 class="text-2xl font-bold text-gray-800">Detail Paket</h2>
+                <span class="text-2xl font-extrabold text-green-700">
                     Rp <?= number_format($p['harga'], 0, ',', '.'); ?>
                 </span>
             </div>
 
-            <ul class="space-y-3 text-sm">
-                <li><b>Durasi:</b> <?= $p['durasi']; ?></li>
-                <li><b>Hotel Makkah:</b> <?= $p['hotel_makkah']; ?></li>
-                <li><b>Hotel Madinah:</b> <?= $p['hotel_madinah']; ?></li>
-                <li><b>Maskapai:</b> <?= $p['maskapai']; ?></li>
-                <li><b>Sisa Seat:</b> <?= $p['sisa_seat']; ?> jamaah</li>
-            </ul>
+            <!-- INFO GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
 
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-clock text-green-600"></i>
+                    <span><b>Durasi:</b> <?= $p['durasi']; ?></span>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-plane text-green-600"></i>
+                    <span><b>Maskapai:</b> <?= $p['maskapai']; ?></span>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-hotel text-green-600"></i>
+                    <span><b>Hotel Makkah:</b> <?= $p['hotel_makkah']; ?></span>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-hotel text-green-600"></i>
+                    <span><b>Hotel Madinah:</b> <?= $p['hotel_madinah']; ?></span>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-user-group text-green-600"></i>
+                    <span><b>Sisa Seat:</b> <?= $p['sisa_seat']; ?> jamaah</span>
+                </div>
+
+            </div>
+
+            <!-- CTA -->
             <a href="https://wa.me/6282130938060?text=Saya%20ingin%20daftar%20<?= urlencode($p['judul']); ?>"
-                target="_blank" class="block bg-green-600 text-white py-3 rounded-xl text-center font-semibold">
-                <i class="fab fa-whatsapp"></i> Daftar via WhatsApp
+                target="_blank"
+                class="mt-6 flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl text-lg font-semibold transition shadow-lg hover:shadow-xl">
+                <i class="fab fa-whatsapp text-xl"></i>
+                Daftar via WhatsApp
             </a>
 
         </div>
     </section>
-
-</body>
-
-</html>
