@@ -241,12 +241,12 @@ if (!$program_haji) {
 
       <!-- Icons -->
       <div class="flex gap-3">
-        <a href="" target="_blank"
+        <a href="https://www.instagram.com/alghifariii._29?igsh=b2pmamtteXRmYnE4/" target="_blank"
           class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
           <i class="fab fa-instagram"></i>
         </a>
 
-        <a href="" target="_blank"
+        <a href="https://www.tiktok.com/@cuawww34?_r=1&_t=ZS-92tbaxJFXa1" target="_blank"
           class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
           <i class="fab fa-tiktok"></i>
         </a>

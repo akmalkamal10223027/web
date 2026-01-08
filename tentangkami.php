@@ -27,7 +27,7 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
 
       <!-- Logo -->
       <a href="index.php" class="flex items-center gap-3">
-        <img src="./public/logo/logo2.png" alt="Logo Barudak Group" width="48" height="48" class="h-12 w-auto" />
+        <img src="./public/logo/logo2.png" alt="Sakha Diamond" width="48" height="48" class="h-12 w-auto" />
       </a>
 
       <!-- Menu -->
@@ -46,12 +46,12 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
 
       <!-- Icons -->
       <div class="flex gap-3">
-        <a href="" target="_blank"
+        <a href="https://www.instagram.com/alghifariii._29?igsh=b2pmamtteXRmYnE4/" target="_blank"
           class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
           <i class="fab fa-instagram"></i>
         </a>
 
-        <a href="" target="_blank"
+        <a href="https://www.tiktok.com/@cuawww34?_r=1&_t=ZS-92tbaxJFXa1" target="_blank"
           class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
           <i class="fab fa-tiktok"></i>
         </a>
