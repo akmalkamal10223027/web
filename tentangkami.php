@@ -214,7 +214,7 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
 
         <div class="col-span-2">
           <div class="flex items-center gap-3 mb-4">
-            <img src="./public/logo/barudak-group.png" alt="Sakha Diamond Logo" class="h-15 w-12" />
+            <img src="./public/logo/logo2.png" alt="Sakha Diamond Logo" class="h-15 w-12" />
             <div>
               <h3 class="font-bold text-xl text-green-400">Sakha Diamond</h3>
               <p class="text-sm text-gray-400">Travel Haji & Umroh Terpercaya</p>
