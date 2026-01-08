@@ -440,8 +440,8 @@ if (!$program_haji) {
         <!-- CARD WRAPPER -->
         <div class="flex flex-wrap justify-center gap-8">
 
-              <?php if (mysqli_num_rows($paket) > 0) { ?>
-                <?php while ($p = mysqli_fetch_assoc($paket)) { ?>
+          <?php if (mysqli_num_rows($paket) > 0) { ?>
+            <?php while ($p = mysqli_fetch_assoc($paket)) { ?>
 
               <div
                 class="w-80 bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group">
@@ -460,7 +460,7 @@ if (!$program_haji) {
                 <!-- CONTENT -->
                 <div class="p-6">
                   <h3 class="text-lg font-bold text-gray-800 mb-3">
-                        <?= htmlspecialchars($p['judul']); ?>
+                    <?= htmlspecialchars($p['judul']); ?>
                   </h3>
 
                   <!-- INFO -->
@@ -507,12 +507,12 @@ if (!$program_haji) {
                 </div>
               </div>
 
-                <?php } ?>
-              <?php } else { ?>
+            <?php } ?>
+          <?php } else { ?>
             <p class="text-center text-gray-500">
               Belum ada paket umroh tersedia
             </p>
-              <?php } ?>
+          <?php } ?>
 
         </div>
       </div>
@@ -851,7 +851,7 @@ if (!$program_haji) {
 
           <div class="col-span-2">
             <div class="flex items-center gap-3 mb-4">
-              <img src="./public/logo/barudak-group.png" alt="Sakha Diamond Logo" class="h-15 w-12" />
+              <img src="./public/logo/logo2.png" alt="Sakha Diamond Logo" class="h-15 w-12" />
               <div>
                 <h3 class="font-bold text-xl text-green-400">Sakha Diamond</h3>
                 <p class="text-sm text-gray-400">Travel Haji & Umroh Terpercaya</p>
