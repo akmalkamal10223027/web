@@ -21,28 +21,25 @@ $page = $_GET['page'] ?? 'home';
 
     <div class="flex min-h-screen">
         <aside class="w-64 bg-white border-r">
-            <div class="p-6 border-b flex items-center gap-3">
-                <img src="../assets/img/logo.png" alt="Sakha Diamond" class="w-10 h-10 object-contain">
-                <div class="leading-tight">
-                    <h1 class="text-sm font-semibold text-slate-800">
-                        Sakha Diamond
-                    </h1>
-                    <p class="text-xs text-slate-500">
-                        Admin Panel
-                    </p>
-                </div>
+            <div class="p-6 border-b">
+                <h1 class="text-xl font-bold text-blue-600">SAKHA DIAMOND</h1>
+                <p class="text-sm text-slate-500">Admin Panel</p>
             </div>
-
-
 
             <nav class="p-4 space-y-2">
                 <a href="dashboard.php?page=home" class="block px-4 py-2 rounded hover:bg-slate-100">Halaman Utama</a>
                 <a href="dashboard.php?page=tentang" class="block px-4 py-2 rounded hover:bg-slate-100">Tentang Kami</a>
                 <a href="dashboard.php?page=paket" class="block px-4 py-2 rounded hover:bg-slate-100">Paket</a>
+                <a href="dashboard.php?page=program_haji" class="block px-4 py-2 rounded hover:bg-slate-100">Paket
+                    haji</a>
+                <a href="dashboard.php?page=semua_paket" class="block px-4 py-2 rounded hover:bg-slate-100">semua
+                    paket</a>
                 <a href="dashboard.php?page=galeri" class="block px-4 py-2 rounded hover:bg-slate-100">Galeri</a>
                 <a href="dashboard.php?page=jamaah" class="block px-4 py-2 rounded hover:bg-slate-100">Data Jamaah</a>
                 <a href="dashboard.php?page=pembayaran" class="block px-4 py-2 rounded hover:bg-slate-100">Data
                     Pembayaran</a>
+                <a href="dashboard.php?page=pesan" class="block px-4 py-2 rounded hover:bg-slate-100">Pesan masuk</a>
+
             </nav>
         </aside>
 
@@ -69,6 +66,31 @@ $page = $_GET['page'] ?? 'home';
                         include "edit_paket.php";
                         break;
 
+                    case 'program_haji':
+                        include "program_haji.php";
+                        break;
+
+                    case 'tambah_program_haji':
+                        include "tambah_program_haji.php";
+                        break;
+
+                    case 'edit_program_haji':
+                        include "edit_program_haji.php";
+                        break;
+
+                    case 'semua_paket':
+                        include "semua_paket.php";
+                        break;
+
+                    case 'tambah_semua_paket':
+                        include "tambah_semua_paket.php";
+                        break;
+
+                    case 'edit_semua_paket':
+                        include "edit_semua_paket.php";
+                        break;
+
+
                     case 'galeri':
                         include "galeri.php";
                         break;
@@ -82,7 +104,19 @@ $page = $_GET['page'] ?? 'home';
                         break;
 
                     case 'jamaah':
-                        include "jamaah.php";
+                        include 'jamaah.php';
+                        break;
+
+                    case 'tambah_jamaah':
+                        include 'tambah_jamaah.php';
+                        break;
+
+                    case 'edit_jamaah':
+                        include 'edit_jamaah.php';
+                        break;
+
+                    case 'detail_jamaah':
+                        include 'detail_jamaah.php';
                         break;
 
                     case 'pembayaran':
@@ -101,8 +135,16 @@ $page = $_GET['page'] ?? 'home';
                         include "detail_pembayaran.php";
                         break;
 
+                    case 'pdfpembayaran':
+                        include "pdfpembayaran.php";
+                        break;
+
                     case 'tentang':
                         include "tentang.php";
+                        break;
+
+                    case 'pesan':
+                        include "pesan.php";
                         break;
 
                     default:

@@ -423,174 +423,193 @@ if (!$program_haji) {
     </section>
 
 
-    <!-- Highlight Paket Umrah -->
-    <section class="py-16 bg-gray-50">
+    <!-- paket umroh terbaik -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-green-700 mb-2">
-          Paket Umroh Terbaik
-        </h2>
-        <h1 class="max-w-3xl text-center mx-auto mt-4 text-base leading-relaxed mb-8">
-          berikut adalah paket umroh terbaik untuk anda para tamu tamu Alloh
-        </h1>
 
-        <div class="flex flex-wrap gap-6 justify-center">
+        <!-- HEADER -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-extrabold text-green-700">
+            Paket Umroh Terbaik
+          </h2>
+          <p class="max-w-2xl mx-auto mt-4 text-gray-600">
+            Pilihan paket umroh terbaik untuk para tamu Allah dengan pelayanan aman, nyaman, dan terpercaya
+          </p>
+        </div>
 
-          <?php if (mysqli_num_rows($paket) > 0) { ?>
-            <?php while ($p = mysqli_fetch_assoc($paket)) { ?>
+        <!-- CARD WRAPPER -->
+        <div class="flex flex-wrap justify-center gap-8">
 
-              <div class="w-80 bg-white rounded-2xl shadow-lg overflow-hidden">
+              <?php if (mysqli_num_rows($paket) > 0) { ?>
+                <?php while ($p = mysqli_fetch_assoc($paket)) { ?>
+
+              <div
+                class="w-80 bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group">
 
                 <!-- IMAGE -->
-                <img src="assets/img/<?= htmlspecialchars($p['gambar']); ?>" class="w-full h-48 object-cover">
+                <div class="relative">
+                  <img src="assets/img/<?= htmlspecialchars($p['gambar']); ?>"
+                    class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
 
-                <div class="p-5">
-                  <h3 class="text-lg font-bold text-gray-800 mb-1">
-                    <?= htmlspecialchars($p['judul']); ?>
+                  <!-- BADGE SEAT -->
+                  <span class="absolute top-4 right-4 bg-green-600 text-white text-xs px-3 py-1 rounded-full shadow">
+                    Sisa <?= htmlspecialchars($p['sisa_seat']); ?> Seat
+                  </span>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-gray-800 mb-3">
+                        <?= htmlspecialchars($p['judul']); ?>
                   </h3>
 
-                  <!-- LIST INFO -->
-                  <ul class="space-y-2 text-sm text-gray-700 mt-3">
+                  <!-- INFO -->
+                  <ul class="space-y-3 text-sm text-gray-700">
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-clock text-xs"></i>
-                      </span>
+                      <i class="fa-solid fa-clock text-green-600"></i>
                       <span>Durasi: <?= htmlspecialchars($p['durasi']); ?></span>
                     </li>
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-hotel text-xs"></i>
-                      </span>
-                      <span>Hotel Makkah: <?= htmlspecialchars($p['hotel_makkah']); ?></span>
+                      <i class="fa-solid fa-hotel text-green-600"></i>
+                      <span>Makkah: <?= htmlspecialchars($p['hotel_makkah']); ?></span>
                     </li>
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-hotel text-xs"></i>
-                      </span>
-                      <span>Hotel Madinah: <?= htmlspecialchars($p['hotel_madinah']); ?></span>
+                      <i class="fa-solid fa-hotel text-green-600"></i>
+                      <span>Madinah: <?= htmlspecialchars($p['hotel_madinah']); ?></span>
                     </li>
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-plane text-xs"></i>
-                      </span>
-                      <span>Maskapai: <?= htmlspecialchars($p['maskapai']); ?></span>
-                    </li>
-
-                    <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-user-group text-xs"></i>
-                      </span>
-                      <span>Sisa Seat: <?= htmlspecialchars($p['sisa_seat']); ?></span>
+                      <i class="fa-solid fa-plane text-green-600"></i>
+                      <span><?= htmlspecialchars($p['maskapai']); ?></span>
                     </li>
 
                   </ul>
 
-                  <!-- PRICE & BUTTON -->
-                  <div class="flex items-center justify-between mt-5">
-                    <div class="text-lg font-bold text-green-600">
-                      Rp <?= number_format($p['harga'], 0, ',', '.'); ?>
+                  <!-- FOOTER -->
+                  <div class="mt-6 flex items-center justify-between">
+                    <div>
+                      <p class="text-xs text-gray-500">Mulai dari</p>
+                      <p class="text-xl font-extrabold text-green-600">
+                        Rp <?= number_format($p['harga'], 0, ',', '.'); ?>
+                      </p>
                     </div>
 
                     <a href="detail_umroh.php?id=<?= $p['id']; ?>"
-                      class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                      class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition">
                       Detail
                       <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
-
-
                   </div>
+
                 </div>
               </div>
 
-            <?php } ?>
-          <?php } else { ?>
-            <p class="text-center text-gray-500">Belum ada paket tersedia</p>
-          <?php } ?>
+                <?php } ?>
+              <?php } else { ?>
+            <p class="text-center text-gray-500">
+              Belum ada paket umroh tersedia
+            </p>
+              <?php } ?>
 
         </div>
       </div>
     </section>
 
-    <!-- paket haji terbaik -->
-    <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
-        <h2 class="text-3xl font-bold text-center text-green-700 mb-2">
-          Program Haji Terbaik
-        </h2>
-        <h1 class="max-w-3xl text-center mx-auto mt-4 text-base leading-relaxed mb-8">
-          berikut adalah program haji terbaik untuk anda para tamu tamu Allah
-        </h1>
 
-        <div class="flex flex-wrap gap-6 justify-center">
+    <!-- paket haji terbaik -->
+    <section class="py-20 bg-gradient-to-b from-gray-50 to-white">
+      <div class="container mx-auto px-4">
+
+        <!-- HEADER -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-extrabold text-green-700">
+            Program Haji Terbaik
+          </h2>
+          <p class="max-w-2xl mx-auto mt-4 text-gray-600">
+            Pilihan program haji terbaik untuk para tamu Allah dengan pelayanan aman, nyaman, dan terpercaya
+          </p>
+        </div>
+
+        <!-- CARD WRAPPER -->
+        <div class="flex flex-wrap justify-center gap-8">
 
           <?php if (mysqli_num_rows($program_haji) > 0) { ?>
             <?php while ($h = mysqli_fetch_assoc($program_haji)) { ?>
 
-              <div class="w-80 bg-white rounded-2xl shadow-lg overflow-hidden">
+              <div
+                class="w-80 bg-white rounded-3xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden group">
 
                 <!-- IMAGE -->
-                <img src="assets/img/<?= htmlspecialchars($h['gambar']); ?>" class="w-full h-48 object-cover">
+                <div class="relative">
+                  <img src="assets/img/<?= htmlspecialchars($h['gambar']); ?>"
+                    class="w-full h-52 object-cover group-hover:scale-105 transition duration-300">
 
-                <div class="p-5">
-                  <h3 class="text-lg font-bold text-gray-800 mb-1">
+                  <!-- BADGE SEAT -->
+                  <span class="absolute top-4 right-4 bg-green-600 text-white text-xs px-3 py-1 rounded-full shadow">
+                    Sisa
+                    <?= htmlspecialchars($h['sisa_seat']); ?> Seat
+                  </span>
+                </div>
+
+                <!-- CONTENT -->
+                <div class="p-6">
+                  <h3 class="text-lg font-bold text-gray-800 mb-3">
                     <?= htmlspecialchars($h['judul']); ?>
                   </h3>
 
-                  <!-- LIST INFO -->
-                  <ul class="space-y-2 text-sm text-gray-700 mt-3">
+                  <!-- INFO -->
+                  <ul class="space-y-3 text-sm text-gray-700">
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-clock text-xs"></i>
+                      <i class="fa-solid fa-clock text-green-600"></i>
+                      <span>Durasi:
+                        <?= htmlspecialchars($h['durasi']); ?>
                       </span>
-                      <span>Durasi: <?= htmlspecialchars($h['durasi']); ?></span>
                     </li>
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-hotel text-xs"></i>
+                      <i class="fa-solid fa-hotel text-green-600"></i>
+                      <span>Makkah:
+                        <?= htmlspecialchars($h['hotel_makkah']); ?>
                       </span>
-                      <span>Hotel Makkah: <?= htmlspecialchars($h['hotel_makkah']); ?></span>
                     </li>
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-hotel text-xs"></i>
+                      <i class="fa-solid fa-hotel text-green-600"></i>
+                      <span>Madinah:
+                        <?= htmlspecialchars($h['hotel_madinah']); ?>
                       </span>
-                      <span>Hotel Madinah: <?= htmlspecialchars($h['hotel_madinah']); ?></span>
                     </li>
 
                     <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-plane text-xs"></i>
+                      <i class="fa-solid fa-plane text-green-600"></i>
+                      <span>
+                        <?= htmlspecialchars($h['maskapai']); ?>
                       </span>
-                      <span>Maskapai: <?= htmlspecialchars($h['maskapai']); ?></span>
-                    </li>
-
-                    <li class="flex items-center gap-3">
-                      <span class="w-7 h-7 flex items-center justify-center rounded-full bg-green-100 text-green-600">
-                        <i class="fa-solid fa-user-group text-xs"></i>
-                      </span>
-                      <span>Sisa Seat: <?= htmlspecialchars($h['sisa_seat']); ?></span>
                     </li>
 
                   </ul>
 
-                  <!-- PRICE & BUTTON -->
-                  <div class="flex items-center justify-between mt-5">
-                    <div class="text-lg font-bold text-green-600">
-                      Rp <?= number_format($h['harga'], 0, ',', '.'); ?>
+                  <!-- FOOTER -->
+                  <div class="mt-6 flex items-center justify-between">
+                    <div>
+                      <p class="text-xs text-gray-500">Mulai dari</p>
+                      <p class="text-xl font-extrabold text-green-600">
+                        Rp
+                        <?= number_format($h['harga'], 0, ',', '.'); ?>
+                      </p>
                     </div>
 
                     <a href="detail_haji.php?id=<?= $h['id']; ?>"
-                      class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
+                      class="bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full text-sm font-semibold flex items-center gap-2 transition">
                       Detail
                       <i class="fa-solid fa-arrow-right text-xs"></i>
                     </a>
                   </div>
+
                 </div>
               </div>
 
@@ -604,6 +623,7 @@ if (!$program_haji) {
         </div>
       </div>
     </section>
+
 
 
     <!-- Section Tentang Kami -->
