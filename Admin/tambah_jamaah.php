@@ -22,7 +22,7 @@ if (isset($_POST['simpan'])) {
     $hargaSetor = $_POST['hargaSetor'];
     $tlp = $_POST['tlp'];
 
-    // ===== UPLOAD FILE =====
+    // ===== UPLOAD FILE =====   
     $folder = "../uploads/jamaah/";
 
     if (!is_dir($folder)) {
