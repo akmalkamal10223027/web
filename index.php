@@ -12,9 +12,16 @@ $program_haji = mysqli_query($conn, "SELECT * FROM program_haji WHERE status='ak
 if (!$program_haji) {
   die("Query haji error: " . mysqli_error($conn));
 }
+
+
+/**Testimony */
+$data = mysqli_query(
+  $conn,
+  "SELECT * FROM testimoni_sosmed
+   WHERE status='aktif'
+   ORDER BY created_at DESC"
+);
 ?>
-
-
 
 <!DOCTYPE html>
 <html lang="id">
@@ -720,130 +727,58 @@ if (!$program_haji) {
           </div>
     </section>
 
-
-    <!-- testimoni -->
-    <section id="testimoni" class="bg-gray-50 py-16 px-4" x-data="{ open:false, video:'' }">
+    <!-- Testimoni -->
+    <section id="testimoni" class="bg-gray-50 py-16 px-4">
       <div class="max-w-7xl mx-auto">
 
-        <!-- Header -->
         <div class="text-center mb-12">
-          <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-            <i class="fas fa-comments text-2xl text-green-600"></i>
-          </div>
-          <h2 class="text-3xl font-bold text-green-700 mb-3">
+          <h2 class="text-3xl font-bold text-green-700">
             Testimoni Jamaah
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
-            Pengalaman nyata jamaah yang telah menunaikan ibadah Umroh bersama kami
+          <p class="text-gray-600">
+            Testimoni asli dari Instagram & TikTok
           </p>
         </div>
 
-        <!-- Testimoni Cards -->
-        <div class="grid md:grid-cols-3 gap-6 mb-14">
+        <div class="grid md:grid-cols-3 gap-6">
 
-          <!-- Card -->
-          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <div class="flex items-center gap-4 mb-4">
-              <img src="public/images/jamaah1.jpg" class="w-14 h-14 rounded-full object-cover">
-              <div>
-                <h4 class="font-semibold text-gray-800">Hj. Siti Aisyah</h4>
-                <p class="text-sm text-gray-500">Umroh Reguler</p>
-              </div>
-            </div>
-            <div class="flex text-yellow-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Alhamdulillah pelayanan sangat memuaskan, pembimbing ramah dan hotel dekat
-              Masjid.
-            </p>
-          </div>
+          <?php while ($t = mysqli_fetch_assoc($data)) { ?>
+            <div class="bg-white p-4 rounded-2xl shadow relative group overflow-hidden">
 
-          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <div class="flex items-center gap-4 mb-4">
-              <img src="public/images/jamaah2.jpg" class="w-14 h-14 rounded-full object-cover">
-              <div>
-                <h4 class="font-semibold text-gray-800">Bpk. Ahmad Fauzi</h4>
-                <p class="text-sm text-gray-500">Umroh Plus Turki</p>
-              </div>
-            </div>
-            <div class="flex text-yellow-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Perjalanan nyaman, jadwal tertata rapi, sangat direkomendasikan.
-            </p>
-          </div>
+              <!-- EMBED -->
+              <?php if ($t['platform'] === 'instagram') { ?>
+                <blockquote class="instagram-media" data-instgrm-permalink="<?= $t['embed_url']; ?>"
+                  data-instgrm-version="14">
+                </blockquote>
 
-          <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
-            <div class="flex items-center gap-4 mb-4">
-              <img src="public/images/jamaah2.jpg" class="w-14 h-14 rounded-full object-cover">
-              <div>
-                <h4 class="font-semibold text-gray-800">Ibu Nurhayati</h4>
-                <p class="text-sm text-gray-500">Umroh Private</p>
-              </div>
-            </div>
-            <div class="flex text-yellow-400 mb-3">
-              ★★★★★
-            </div>
-            <p class="text-gray-600 text-sm leading-relaxed">
-              Sangat membantu jamaah lansia, pelayanan penuh kesabaran.
-            </p>
-          </div>
+              <?php } elseif ($t['platform'] === 'tiktok') {
 
+                preg_match('/video\/([0-9]+)/', $t['embed_url'], $vid);
+                $video_id = $vid[1] ?? '';
+                ?>
+                <iframe src="https://www.tiktok.com/embed/v2/<?= $video_id; ?>" class="w-full h-[520px] rounded-xl"
+                  loading="lazy">
+                </iframe>
+              <?php } ?>
+
+              <!-- OVERLAY / PENGHALANG -->
+              <a href="<?= $t['embed_url']; ?>" target="_blank" class="absolute inset-0 bg-black/30 flex items-center justify-center
+            opacity-0 group-hover:opacity-100 transition">
+
+                <div class="bg-white text-gray-800 px-5 py-3 rounded-full shadow-lg
+                flex items-center gap-2 font-semibold text-sm">
+                  ▶ Lihat di <?= ucfirst($t['platform']); ?>
+                </div>
+              </a>
+            </div>
+          <?php } ?>
         </div>
-
-        <!-- Video Dokumentasi -->
-        <div class="bg-white rounded-3xl shadow-lg p-8">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-12 h-12 bg-green-600 rounded-lg flex items-center justify-center">
-              <i class="fas fa-video text-white text-xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800">
-              Dokumentasi Video Jamaah
-            </h3>
-          </div>
-
-          <div class="grid sm:grid-cols-3 gap-4">
-            <div @click="open=true; video='https://www.youtube.com/embed/VswFo7bSpZ8'"
-              class="relative cursor-pointer group overflow-hidden rounded-xl">
-              <img src="assets/img/video1.jpg" class="w-full h-40 object-cover group-hover:scale-110 transition">
-              <div
-                class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-3xl opacity-0 group-hover:opacity-100 transition">
-                ▶
-              </div>
-            </div>
-
-            <div @click="open=true; video='https://www.youtube.com/embed/VIDEO_ID'"
-              class="relative cursor-pointer group overflow-hidden rounded-xl">
-              <img src="assets/img/video2.jpg" class="w-full h-40 object-cover group-hover:scale-110 transition">
-              <div
-                class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-3xl opacity-0 group-hover:opacity-100 transition">
-                ▶
-              </div>
-            </div>
-
-            <div @click="open=true; video='https://www.youtube.com/embed/VIDEO_ID'"
-              class="relative cursor-pointer group overflow-hidden rounded-xl">
-              <img src="assets/img/video3.jpg" class="w-full h-40 object-cover group-hover:scale-110 transition">
-              <div
-                class="absolute inset-0 bg-black/50 flex items-center justify-center text-white text-3xl opacity-0 group-hover:opacity-100 transition">
-                ▶
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Modal Video -->
-      <div x-show="open" x-transition @click.self="open=false"
-        class="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-        <div class="bg-black rounded-xl overflow-hidden w-full max-w-xl">
-          <iframe :src="video" class="w-full aspect-video" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
     </section>
+
+    <!-- SCRIPT WAJIB -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+    <script async src="https://www.tiktok.com/embed.js"></script>
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
