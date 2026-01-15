@@ -165,12 +165,32 @@ if (!$p) {
             </div>
 
             <!-- CTA -->
-            <a href="https://wa.me/6282130938060?text=Saya%20ingin%20daftar%20<?= urlencode($p['judul']); ?>"
-                target="_blank"
-                class="mt-6 flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl text-lg font-semibold transition shadow-lg hover:shadow-xl">
-                <i class="fab fa-whatsapp text-xl"></i>
-                Daftar via WhatsApp
-            </a>
+            <div class="pt-8 grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+
+                <!-- DAFTAR VIA WHATSAPP -->
+                <a href="https://wa.me/6282130938060?text=Saya%20ingin%20daftar%20<?= urlencode($p['judul']); ?>"
+                    target="_blank"
+                    class="bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl font-bold text-center transition transform hover:-translate-y-1 shadow-lg">
+                    <i class="fab fa-whatsapp mr-2 text-lg"></i>
+                    Daftar via WA
+                </a>
+
+                <!-- DAFTAR VIA GOOGLE FORM -->
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSegc2Gw3MBTbWq2JVCkp9UbpG-Mi_yVmPTYnPdmbWpdYVGfbA/viewform?usp=dialog"
+                    target="_blank"
+                    class="border-2 border-green-600 text-green-700 py-4 rounded-2xl font-bold text-center hover:bg-green-50 transition">
+                    Daftar via Google Form
+                </a>
+
+                <!-- 🔥 DAFTAR LANGSUNG KE WEBSITE -->
+                <a href="tambah_jamaah_user.php?paket_id=<?= $p['id']; ?>"
+                    class="bg-gradient-to-r from-emerald-600 to-green-600 text-white py-4 rounded-2xl font-bold text-center hover:opacity-90 transition shadow-lg">
+                    <i class="fa-solid fa-file-pen mr-2"></i>
+                    Daftar Sekarang
+                </a>
+
+            </div>
+
 
         </div>
     </section>
