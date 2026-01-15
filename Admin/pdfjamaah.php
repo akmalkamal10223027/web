@@ -2,17 +2,31 @@
 require_once "../config/koneksi.php";
 require_once "../fpdf/fpdf.php";
 
+/* ======================
+   VALIDASI ID
+====================== */
 $id = $_GET['id'] ?? null;
 if (!$id) {
-    die("Kode Jamaah tidak ditemukan");
+   die("Kode Jamaah tidak ditemukan");
 }
 
+/* ======================
+   AMBIL DATA
+====================== */
 $query = mysqli_query($conn, "SELECT * FROM jamaah WHERE kodeJamaah='$id'");
 $data = mysqli_fetch_assoc($query);
 
 if (!$data) {
-    die("Data jamaah tidak ditemukan");
+   die("Data jamaah tidak ditemukan");
 }
+
+/* ======================
+   PATH FILE
+====================== */
+$folder = "../uploads/jamaah/";
+$ktp = $folder . $data['ktp'];
+$kk = $folder . $data['kk'];
+$passport = $folder . $data['passport'];
 
 /* ======================
    BUAT PDF
@@ -29,45 +43,42 @@ $pdf->Cell(0, 7, 'SAKHA DIAMOND', 0, 1, 'C');
 
 $pdf->SetFont('Arial', '', 10);
 $pdf->Cell(0, 6, 'Izin Resmi Kemenag RI | Telp: 0812-xxxx-xxxx', 0, 1, 'C');
-$pdf->Cell(0, 6, 'Alamat: Jl. Contoh Alamat No. 123, Indonesia', 0, 1, 'C');
+$pdf->Cell(0, 6, 'Alamat: Jl. Cilampunghilir Rt.012/Rw.122 Kec. Singaparna', 0, 1, 'C');
 
 $pdf->Ln(3);
-$pdf->SetDrawColor(0, 0, 0);
 $pdf->Line(20, $pdf->GetY(), 190, $pdf->GetY());
 $pdf->Ln(8);
 
 /* ======================
-   JUDUL SURAT
+   JUDUL
 ====================== */
 $pdf->SetFont('Arial', 'B', 13);
 $pdf->Cell(0, 8, 'DATA JAMAAH UMROH', 0, 1, 'C');
 
 $pdf->SetFont('Arial', '', 11);
 $pdf->Cell(0, 6, 'Nomor: ' . $data['kodeJamaah'] . '/UMROH/' . date('Y'), 0, 1, 'C');
-
 $pdf->Ln(10);
 
 /* ======================
-   ISI SURAT
+   PARAGRAF
 ====================== */
-$pdf->SetFont('Arial', '', 11);
 $pdf->MultiCell(
-    0,
-    7,
-    "Dengan ini kami menerangkan bahwa jamaah berikut telah terdaftar secara resmi "
-    . "sebagai peserta perjalanan ibadah umroh pada Sakha Diamond. "
-    . "Adapun data jamaah adalah sebagai berikut:"
+   0,
+   7,
+   "Dengan ini kami menerangkan bahwa jamaah berikut telah terdaftar secara resmi "
+   . "sebagai peserta perjalanan ibadah umroh pada Sakha Diamond. "
+   . "Adapun data jamaah adalah sebagai berikut:"
 );
 $pdf->Ln(5);
 
 /* ======================
-   FUNGSI BARIS DATA
+   FUNGSI BARIS
 ====================== */
 function row($pdf, $label, $value)
 {
-    $pdf->Cell(60, 8, $label, 0, 0);
-    $pdf->Cell(5, 8, ':', 0, 0);
-    $pdf->MultiCell(0, 8, $value, 0);
+   $pdf->Cell(60, 8, $label, 0, 0);
+   $pdf->Cell(5, 8, ':', 0, 0);
+   $pdf->MultiCell(0, 8, $value, 0);
 }
 
 /* ======================
@@ -78,9 +89,9 @@ row($pdf, "Nama Lengkap", $data['nama']);
 row($pdf, "NIK", $data['noKtp']);
 row($pdf, "No Paspor", $data['noPass']);
 row(
-    $pdf,
-    "Tempat, Tanggal Lahir",
-    $data['tempatLahir'] . ", " . date('d F Y', strtotime($data['tglLahir']))
+   $pdf,
+   "Tempat, Tanggal Lahir",
+   $data['tempatLahir'] . ", " . date('d F Y', strtotime($data['tglLahir']))
 );
 row($pdf, "Usia", $data['usia'] . " Tahun");
 row($pdf, "Nama Ayah", $data['namaAyah']);
@@ -95,23 +106,44 @@ row($pdf, "Tanggal Keberangkatan", date('d F Y', strtotime($data['tglKeberangkat
 row($pdf, "Perlengkapan", $data['perlengkapan']);
 row($pdf, "Vaksin", $data['vaksin']);
 
-$pdf->Ln(10);
+$pdf->Ln(8);
 
 /* ======================
-   PENUTUP
+   HALAMAN DOKUMEN
 ====================== */
-$pdf->MultiCell(
-    0,
-    7,
-    "Demikian surat keterangan data jamaah ini dibuat dengan sebenarnya "
-    . "untuk digunakan sebagaimana mestinya."
-);
+$pdf->AddPage();
+$pdf->SetFont('Arial', 'B', 13);
+$pdf->Cell(0, 8, 'DOKUMEN JAMAAH', 0, 1, 'C');
+$pdf->Ln(8);
 
-$pdf->Ln(15);
+/* KTP */
+if (!empty($data['ktp']) && file_exists($ktp)) {
+   $pdf->SetFont('Arial', 'B', 11);
+   $pdf->Cell(0, 6, 'KTP', 0, 1);
+   $pdf->Image($ktp, 30, null, 150);
+   $pdf->Ln(10);
+}
+
+/* KK */
+if (!empty($data['kk']) && file_exists($kk)) {
+   $pdf->SetFont('Arial', 'B', 11);
+   $pdf->Cell(0, 6, 'KARTU KELUARGA', 0, 1);
+   $pdf->Image($kk, 30, null, 150);
+   $pdf->Ln(10);
+}
+
+/* PASPOR */
+if (!empty($data['passport']) && file_exists($passport)) {
+   $pdf->SetFont('Arial', 'B', 11);
+   $pdf->Cell(0, 6, 'PASPOR', 0, 1);
+   $pdf->Image($passport, 30, null, 150);
+   $pdf->Ln(10);
+}
 
 /* ======================
    TANDA TANGAN
 ====================== */
+$pdf->Ln(10);
 $pdf->Cell(0, 6, 'Salebu, ' . date('d F Y'), 0, 1, 'R');
 $pdf->Ln(15);
 

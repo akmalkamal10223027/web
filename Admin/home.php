@@ -20,6 +20,7 @@ $totalSemuaPaket = total($conn, 'semua_paket');
 $totalprogramhaji = total($conn, 'program_haji');
 $totalJamaah = total($conn, 'jamaah');
 $totalGaleri = total($conn, 'galeri');
+$totalTestimoni = total($conn, 'testimoni_sosmed');
 $totalPembayaran = total($conn, 'transaksi');
 $totalPesan = total($conn, 'Pesan');
 ?>
@@ -65,6 +66,14 @@ $totalPesan = total($conn, 'Pesan');
         <p class="text-sm text-slate-500">Total Jamaah</p>
         <h2 class="text-3xl font-bold text-emerald-600 mt-2">
             <?= $totalJamaah ?>
+        </h2>
+    </div>
+
+    <!-- Testimoni -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border">
+        <p class="text-sm text-slate-500">testimoni</p>
+        <h2 class="text-3xl font-bold text-purple-600 mt-2">
+            <?= $totalTestimoni ?>
         </h2>
     </div>
 
@@ -116,6 +125,8 @@ $totalPesan = total($conn, 'Pesan');
                 'Galeri',
                 'Pembayaran',
                 'Pesan'
+                'testimoni_sosmed'
+
             ],
             datasets: [{
                 label: 'Jumlah Data',
@@ -126,6 +137,7 @@ $totalPesan = total($conn, 'Pesan');
                     <?= $totalGaleri ?>,
                     <?= $totalPembayaran ?>,
                     <?= $totalPesan ?>
+                    <?= $totalTestimoni ?>
                 ],
                 backgroundColor: [
                     '#3b82f6',

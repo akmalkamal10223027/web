@@ -80,7 +80,7 @@
   <section class="relative h-[420px] md:h-[480px] flex items-center justify-center">
 
     <!-- BACKGROUND IMAGE -->
-    <img src="assets/img/bg-kabah.jpg" alt="Latar Umroh dan Haji" class="absolute inset-0 w-full h-full object-cover">
+    <img src="assets/img/LT_contak.jpg" alt="Latar Umroh dan Haji" class="absolute inset-0 w-full h-full object-cover">
 
     <!-- OVERLAY -->
     <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
