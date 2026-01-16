@@ -778,6 +778,122 @@ $data = mysqli_query(
     <!-- SCRIPT WAJIB -->
     <script async src="https://www.instagram.com/embed.js"></script>
     <script async src="https://www.tiktok.com/embed.js"></script>
+   
+
+    <div class="max-w-4xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-green-900">Pertanyaan Umum (FAQ)</h1>
+            <p class="text-gray-500 max-w-2xl mx-auto">
+                Temukan jawaban dari pertanyaan umum seputar layanan umroh, haji, dan jelajah dunia kami. 
+                Jika Anda masih memiliki pertanyaan, tim kami siap membantu!
+            </p>
+        </div>
+        <div class="space-y-4">
+            
+            <div class="border-b border-gray-200">
+             <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(1)">
+                    <span class="text-lg font-medium">Apa perbedaan antara umroh plus dan lainnya?</span>
+                    <span id="icon-1" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-greeen-50 transition-all">+</span>
+                </button>
+                <div id="content-1" class="hidden pb-6 text-gray-600 leading-relaxed">
+                    Umroh plus biasanya mencakup kunjungan tambahan ke negara lain seperti Turki, Mesir, atau Dubai setelah atau sebelum melaksanakan ibadah Umroh di Tanah Suci.
+                </div>
+            </div>
+
+            <div class="border-b border-gray-200">
+                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(2)">
+                    <span class="text-lg font-medium">Apakah rute penerbangannya transit atau langsung (Direct)?</span>
+                    <span id="icon-2" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
+                </button>
+                <div id="content-2" class="hidden pb-6 text-gray-600">
+                    Kami menyediakan kedua opsi tersebut tergantung paket yang Anda pilih. Paket Reguler biasanya menggunakan penerbangan langsung (Direct) ke Jeddah atau Madinah.
+                </div>
+            </div>
+
+            <div class="border-b border-gray-200">
+                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(3)">
+                    <span class="text-lg font-medium">Siapa saja yang akan membimbing ibadah umroh?</span>
+                    <span id="icon-3" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
+                </button>
+                <div id="content-3" class="hidden pb-6 text-gray-600">
+                    Ibadah akan dibimbing oleh Mutawwif berpengalaman dan Ustadz pembimbing yang berkompeten sesuai Sunnah.
+                </div>
+            </div>
+
+            <div class="border-b border-gray-200">
+                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(4)">
+                    <span class="text-lg font-medium">Apakah vaksin covid & meningitis masih berlaku untuk syarat umroh?</span>
+                    <span id="icon-4" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
+                </button>
+                <div id="content-4" class="hidden pb-6 text-gray-600">
+                    Sesuai regulasi terbaru, vaksin Meningitis sangat dianjurkan (dan wajib untuk visa tertentu), sementara syarat vaksin Covid-19 mengikuti aturan terbaru dari pemerintah Arab Saudi.
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleFaq(id) {
+            const content = document.getElementById(`content-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.textContent = '-';
+                icon.classList.add('bg-green-500', 'text-white');
+            } else {
+                content.classList.add('hidden');
+                icon.textContent = '+';
+                icon.classList.remove('bg-green-500', 'text-white');
+            }
+        }
+    </script>
+
+  <section class="w-full py-20 flex justify-center">
+    <div class="text-center max-w-xl">
+
+      <!-- Avatar group -->
+      <div class="flex justify-center mb-6">
+        <div class="flex -space-x-3">
+          <img
+            src="https://i.pravatar.cc/80?img=1"
+            class="w-12 h-12 rounded-full border-2 border-white"
+            alt="avatar 1"
+          />
+          <img
+            src="https://i.pravatar.cc/80?img=2"
+            class="w-12 h-12 rounded-full border-2 border-white"
+            alt="avatar 2"
+          />
+          <img
+            src="https://i.pravatar.cc/80?img=3"
+            class="w-12 h-12 rounded-full border-2 border-white"
+            alt="avatar 3"
+          />
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="text-xl font-semibold text-gray-900 mb-2">
+        Masih ada pertanyaan?
+      </h2>
+
+      <!-- Description -->
+      <p class="text-gray-500 mb-8">
+        Tidak menemukan jawaban yang di cari? Silakan hubungi tim kami.
+      </p>
+
+      <!-- Button -->
+      <a href="kontak.php"
+                class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 ">
+                <i class="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
+                <span class="text-sm lg:text-base">Konsultasi Gratis</span>
+              </a>
+
+    </div>
+  </section>
+
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
