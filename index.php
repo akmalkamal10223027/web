@@ -782,24 +782,16 @@ $data = mysqli_query(
 
     <div class="max-w-4xl mx-auto px-4 py-16">
         <div class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-blue-900">Pertanyaan Umum (FAQ)</h1>
+            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-green-900">Pertanyaan Umum (FAQ)</h1>
             <p class="text-gray-500 max-w-2xl mx-auto">
                 Temukan jawaban dari pertanyaan umum seputar layanan umroh, haji, dan jelajah dunia kami. 
                 Jika Anda masih memiliki pertanyaan, tim kami siap membantu!
             </p>
         </div>
-
-        <div class="flex justify-center mb-12">
-            <div class="bg-gray-100 p-1 rounded-full flex items-center">
-                <button class="bg-green-500 text-white px-6 py-2 rounded-full font-medium shadow-sm">Umroh</button>
-                <button class="px-6 py-2 text-gray-500 font-medium">Haji</button>
-            </div>
-        </div>
-
         <div class="space-y-4">
             
             <div class="border-b border-gray-200">
-                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(1)">
+             <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(1)">
                     <span class="text-lg font-medium">Apa perbedaan antara umroh plus dan lainnya?</span>
                     <span id="icon-1" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-greeen-50 transition-all">+</span>
                 </button>
@@ -857,7 +849,52 @@ $data = mysqli_query(
             }
         }
     </script>
-    
+
+  <section class="w-full py-20 flex justify-center">
+    <div class="text-center max-w-xl">
+
+      <!-- Avatar group -->
+      <div class="flex justify-center mb-6">
+        <div class="flex -space-x-3">
+          <img
+            src="https://i.pravatar.cc/80?img=1"
+            class="w-12 h-12 rounded-full border-2 border-white"
+            alt="avatar 1"
+          />
+          <img
+            src="https://i.pravatar.cc/80?img=2"
+            class="w-12 h-12 rounded-full border-2 border-white"
+            alt="avatar 2"
+          />
+          <img
+            src="https://i.pravatar.cc/80?img=3"
+            class="w-12 h-12 rounded-full border-2 border-white"
+            alt="avatar 3"
+          />
+        </div>
+      </div>
+
+      <!-- Heading -->
+      <h2 class="text-xl font-semibold text-gray-900 mb-2">
+        Masih ada pertanyaan?
+      </h2>
+
+      <!-- Description -->
+      <p class="text-gray-500 mb-8">
+        Tidak menemukan jawaban yang di cari? Silakan hubungi tim kami.
+      </p>
+
+      <!-- Button -->
+      <a href="kontak.php"
+                class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 ">
+                <i class="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
+                <span class="text-sm lg:text-base">Konsultasi Gratis</span>
+              </a>
+
+    </div>
+  </section>
+
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12">
       <div class="container mx-auto px-4">
