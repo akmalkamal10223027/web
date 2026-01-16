@@ -33,10 +33,19 @@ $data = mysqli_query($conn, "SELECT * FROM galeri ORDER BY created_at DESC");
                     <?= htmlspecialchars($g['deskripsi']); ?>
                 </p>
 
-                <a href="hapus_galeri.php?id=<?= $g['id']; ?>" onclick="return confirm('Yakin hapus galeri ini?')"
-                    class="inline-block text-xs text-rose-600 border border-rose-200 px-3 py-1 rounded-lg hover:bg-rose-600 hover:text-white transition">
-                    Hapus
-                </a>
+                <div class="flex gap-2 pt-2">
+    <a href="dashboard.php?page=edit_galeri&id=<?= $g['id']; ?>"
+       class="inline-block text-xs text-blue-600 border border-blue-200 px-3 py-1 rounded-lg hover:bg-blue-600 hover:text-white transition">
+        Edit
+    </a>
+
+    <a href="hapus_galeri.php?id=<?= $g['id']; ?>"
+       onclick="return confirm('Yakin hapus galeri ini?')"
+       class="inline-block text-xs text-rose-600 border border-rose-200 px-3 py-1 rounded-lg hover:bg-rose-600 hover:text-white transition">
+        Hapus
+    </a>
+</div>
+
             </div>
         </div>
     <?php } ?>

@@ -77,37 +77,31 @@
   </nav>
 
   <!-- HERO KONTAK DENGAN BACKGROUND FOTO -->
-  <section class="relative h-[420px] md:h-[480px] flex items-center justify-center">
+  <section class="relative h-[420px] md:h-[480px] flex items-center justify-center overflow-hidden">
 
-    <!-- BACKGROUND IMAGE -->
-    <img src="assets/img/LT_contak.jpg" alt="Latar Umroh dan Haji" class="absolute inset-0 w-full h-full object-cover">
+<!-- Slides -->
+<div class="absolute inset-0">
+  <img src="assets/img/bg_galeri.jpg"
+       class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
+  <img src="assets/img/LT_contak.jpg"
+       class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+</div>
 
-    <!-- OVERLAY -->
-    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
+<!-- Overlay -->
+<div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
 
-    <!-- CONTENT -->
-    <div class="relative z-10 max-w-7xl mx-auto px-6 text-center text-white">
+<!-- Content -->
+<div class="relative z-10 text-center text-white px-6">
+  <h1 class="text-4xl md:text-5xl font-extrabold mb-4 drop-shadow-lg">
+    Hubungi Kami
+  </h1>
+  <p class="max-w-2xl mx-auto text-gray-100 text-lg">
+  Kami siap membantu perjalanan ibadah Umroh & Haji Anda dengan pelayanan aman, nyaman, dan terpercaya
+    <span class="font-semibold text-white">Sakha Diamond</span>
+  </p>
+</div>
 
-      <!-- BADGE -->
-      <span
-        class="inline-block mb-5 px-6 py-2 rounded-full bg-green-600/90 text-sm font-semibold tracking-wide shadow-lg">
-        ✨ Layanan Resmi Umroh & Haji
-      </span>
-
-      <!-- TITLE -->
-      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
-        Hubungi Kami
-      </h1>
-
-      <!-- SUBTITLE -->
-      <p class="max-w-2xl mx-auto text-gray-100 text-lg leading-relaxed drop-shadow">
-        Kami siap membantu perjalanan ibadah Umroh & Haji Anda dengan pelayanan
-        <span class="font-semibold text-white">aman, nyaman, dan terpercaya</span>
-      </p>
-
-    </div>
-  </section>
-
+</section>
   <!-- KONTEN -->
   <section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-12">
 
@@ -195,6 +189,7 @@
       </button>
     </form>
   </section>
+
   <!-- Footer -->
   <footer class="bg-gray-900 text-white py-12">
     <div class="container mx-auto px-4">
@@ -273,6 +268,25 @@
       </div>
     </div>
   </footer>
+
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".hero-slide");
+  let current = 0;
+
+  if (slides.length === 0) return;
+
+  setInterval(() => {
+    slides[current].classList.remove("opacity-100");
+    slides[current].classList.add("opacity-0");
+
+    current = (current + 1) % slides.length;
+
+    slides[current].classList.remove("opacity-0");
+    slides[current].classList.add("opacity-100");
+  }, 3000); // 3 detik
+});
+</script>
 
 </body>
 
