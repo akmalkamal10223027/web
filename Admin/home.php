@@ -109,11 +109,19 @@ $totalPesan = total($conn, 'Pesan');
         Statistik Data Sistem
     </h3>
 
-    <canvas id="dashboardChart" height="120"></canvas>
+    <!-- WRAPPER -->
+    <div class="relative h-64">
+        <canvas id="dashboardChart"></canvas>
+    </div>
 </div>
 
+
+
 <script>
-    const ctx = document.getElementById('dashboardChart').getContext('2d');
+document.addEventListener("DOMContentLoaded", function () {
+
+    const ctx = document.getElementById('dashboardChart');
+    if (!ctx) return;
 
     new Chart(ctx, {
         type: 'bar',
@@ -124,47 +132,51 @@ $totalPesan = total($conn, 'Pesan');
                 'Jamaah',
                 'Galeri',
                 'Pembayaran',
-                'Pesan'
-                'testimoni_sosmed'
-
+                'Pesan',
+                'Testimoni'
             ],
             datasets: [{
-                label: 'Jumlah Data',
                 data: [
                     <?= $totalPaket ?>,
                     <?= $totalSemuaPaket ?>,
                     <?= $totalJamaah ?>,
                     <?= $totalGaleri ?>,
                     <?= $totalPembayaran ?>,
-                    <?= $totalPesan ?>
+                    <?= $totalPesan ?>,
                     <?= $totalTestimoni ?>
                 ],
-                backgroundColor: [
-                    '#3b82f6',
-                    '#6366f1',
-                    '#10b981',
-                    '#a855f7',
-                    '#f97316',
-                    '#ef4444'
-                ],
-                borderRadius: 10
+                backgroundColor: '#22c55e',
+                borderRadius: 10,
+                barThickness: 36
             }]
         },
         options: {
             responsive: true,
+            maintainAspectRatio: false, // 🔥 PENTING
             plugins: {
-                legend: {
-                    display: false
-                }
+                legend: { display: false }
             },
             scales: {
+                x: {
+                    grid: { display: false },
+                    ticks: {
+                        color: '#475569',
+                        font: { size: 12 }
+                    }
+                },
                 y: {
                     beginAtZero: true,
+                    grid: {
+                        color: '#f1f5f9'
+                    },
                     ticks: {
-                        stepSize: 1
+                        stepSize: 1,
+                        color: '#64748b'
                     }
                 }
             }
         }
     });
+
+});
 </script>
