@@ -300,12 +300,12 @@ $data = mysqli_query(
 
             <!-- Main Title -->
             <div>
-              <h1 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 lg:mb-6">
+              <h1 class="text-2xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight mb-4 lg:mb-6">
                 <span class="block text-white">Perjalanan Ibadah</span>
                 <span class="block" style="color: #1ba551">dengan Kenyamanan</span>
                 <span class="block text-white">dan Keikhlasan</span>
               </h1>
-              <p class="text-lg sm:text-xl lg:text-2xl text-green-100 leading-relaxed mb-6 lg:mb-8">
+              <p class="text-sm lg:text-md text-green-100 leading-relaxed mb-6 lg:mb-8">
                 Bersama
                 <span class="font-semibold" style="color: #1ba551">Sakha Diamond</span>, wujudkan Haji &
                 Umroh impian Anda dengan pelayanan terbaik
@@ -338,12 +338,12 @@ $data = mysqli_query(
             <!-- CTA Buttons -->
             <div class="flex flex-col sm:flex-row gap-4">
               <a href="semua paket.php"
-                class="group bg-green-600 hover:bg-green-700 text-white font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center gap-3">
+                class="group bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full shadow-xl hover:shadow-2xl transition-all transform hover:scale-105 flex items-center justify-center gap-3">
                 <i class="fas fa-search group-hover:rotate-12 transition-transform"></i>
-                <span class="text-sm lg:text-base">Lihat Paket Umrah & Haji</span>
+                <span class="text-sm">Lihat Paket Umrah & Haji</span>
               </a>
               <a href="kontak.php"
-                class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 ">
+                class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-2 px-4 rounded-full transition-all flex items-center justify-center gap-3 ">
                 <i class="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
                 <span class="text-sm lg:text-base">Konsultasi Gratis</span>
               </a>
