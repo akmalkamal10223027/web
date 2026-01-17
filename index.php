@@ -267,7 +267,7 @@ $data = mysqli_query(
   <main>
     <!-- Section Hero -->
     <section id="home"
-      class="relative bg-gradient-to-br via-green-900 to-green-700 text-white min-h-screen overflow-hidden"
+      class="relative bg-gradient-to-br via-green-900 to-green-700 text-white min-h-screen overflow-hidden px-24"
       style="background-color: #103f28" ;>
       <!-- Background Pattern -->
       <div class="absolute inset-0 opacity-10">
