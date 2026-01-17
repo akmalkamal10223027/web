@@ -428,6 +428,106 @@ $data = mysqli_query(
         </span>
       </p>
     </section>
+<!-- Section Tentang Kami -->
+<section id="about" class="bg-gradient-to-br from-gray-50 to-white py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center mb-14">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
+        <i class="fas fa-users text-2xl text-green-600"></i>
+      </div>
+      <h2 class="text-3xl font-bold text-green-700 mb-3">
+        Tentang sakhadiamond
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Dipercaya ribuan jamaah sejak 2023
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-14 items-center">
+
+      <!-- Kolom Kiri -->
+      <div class="space-y-8">
+
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+            <i class="fas fa-history text-green-600"></i> Sejarah Kami
+          </h3>
+
+          <p class="text-gray-600 leading-relaxed text-justify">
+            sakhadiamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
+            <span class="font-semibold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan.
+            Filosofi pelayanan kami:
+            <span class="italic font-medium text-green-700">
+              "Umrah mudah, penuh berkah"
+            </span>.
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+            <i class="fas fa-check-circle text-green-600"></i> Keunggulan Kami
+          </h3>
+
+          <div class="grid gap-4">
+            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-user-tie text-white"></i>
+              </div>
+              <span class="text-gray-700">Tim berpengalaman & profesional</span>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-hands-helping text-white"></i>
+              </div>
+              <span class="text-gray-700">Pendampingan ibadah dari awal hingga akhir</span>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-network-wired text-white"></i>
+              </div>
+              <span class="text-gray-700">Jaringan hotel & maskapai terbaik</span>
+            </div>
+
+            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                <i class="fas fa-shield-alt text-white"></i>
+              </div>
+              <span class="text-gray-700">Terdaftar resmi & berizin lengkap</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan -->
+      <div class="flex flex-col items-center text-center">
+        <div class="relative mb-6">
+          <img
+            src="./public/images/foto1.jpeg"
+            alt="Owner Sakha Diamond"
+            class="h-64 w-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition"
+          />
+
+          <div class="absolute -top-4 -right-4 w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-md">
+            <i class="fas fa-certificate text-white text-lg"></i>
+          </div>
+        </div>
+
+        <h5 class="text-sm text-gray-500">Algipari, Lc.</h5>
+        <h4 class="font-bold text-lg text-gray-800">
+          Owner PT. Sakha Diamond
+        </h4>
+        <p class="text-gray-600 text-sm">Berpengalaman 3+ tahun</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
     <!-- paket umroh terbaik -->
@@ -633,99 +733,7 @@ $data = mysqli_query(
 
 
 
-    <!-- Section Tentang Kami -->
-    <section id="about" class="bg-gradient-to-br from-gray-50 to-white py-16 px-4">
-      <div class="container mx-auto">
-
-        <div class="text-center mb-12">
-          <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4">
-            <i class="fas fa-users text-2xl text-green-600"></i>
-          </div>
-          <h2 class="text-3xl font-bold text-green-700 mb-4">Tentang sakhadiamond</h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">Dipercaya ribuan jamaah sejak 2023</p>
-        </div>
-
-        <!-- Grid 2 Kolom -->
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-
-          <!-- Kolom Kiri -->
-          <div>
-            <div class="mb-6">
-              <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
-                <i class="fas fa-history text-green-600"></i> Sejarah Kami
-              </h3>
-
-              <p class="text-gray-600 leading-relaxed text-justify">
-                sakhadiamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
-                <span class="font-bold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan.
-                Kami hadir untuk
-                mengubah pandangan masyarakat bahwa ibadah Umrah adalah hal yang rumit dan penuh
-                kekhawatiran.
-                Filosofi pelayanan kami:
-                <span class="italic font-medium text-green-700">"Umrah mudah, penuh berkah"</span>.
-              </p>
-            </div>
-
-            <!-- Keunggulan -->
-            <div class="space-y-4">
-              <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-                <i class="fas fa-check-circle text-green-600"></i> Keunggulan Kami
-              </h3>
-
-              <div class="grid gap-3">
-                <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                    <i class="fas fa-user-tie text-white"></i>
-                  </div>
-                  <span class="text-gray-700">Tim berpengalaman & profesional</span>
-                </div>
-
-                <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                    <i class="fas fa-hands-helping text-white"></i>
-                  </div>
-                  <span class="text-gray-700">Pendampingan ibadah dari awal hingga akhir</span>
-                </div>
-
-                <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                    <i class="fas fa-network-wired text-white"></i>
-                  </div>
-                  <span class="text-gray-700">Jaringan hotel & maskapai terbaik</span>
-                </div>
-
-                <div class="flex items-center gap-3 p-3 bg-green-50 rounded-lg">
-                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                    <i class="fas fa-shield-alt text-white"></i>
-                  </div>
-                  <span class="text-gray-700">Terdaftar resmi & berizin lengkap</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Kolom Kanan -->
-          <div class="flex flex-col items-center">
-            <div class="relative">
-              <div
-                class="h-60 w-60 bg-gradient-to-br from-green-100 to-green-200 rounded-2xl flex items-center justify-center mb-6 shadow-lg">
-                <img src="./public/images/foto1.jpeg" alt="Owner Sakha diamond"
-                  class="h-60 w-60 object-cover rounded-2xl hover:scale-105 transition-transform duration-300 shadow-md" />
-              </div>
-
-              <div
-                class="absolute -top-4 -right-4 w-16 h-16 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-certificate text-white text-xl"></i>
-              </div>
-            </div>
-
-            <div class="text-center">
-              <h5>Algipari, Lc.</h5>
-              <h4 class="font-bold text-lg text-gray-800 mb-2">Owner PT. Sakha Diamond</h4>
-              <p class="text-gray-600">Berpengalaman 3+ tahun</p>
-            </div>
-          </div>
-    </section>
+    
 
     <!-- Testimoni -->
     <section id="testimoni" class="bg-gray-50 py-16 px-4">
@@ -893,6 +901,62 @@ $data = mysqli_query(
 
     </div>
   </section>
+
+  <!-- Panduan -->
+  <section class="bg-green-50 py-20 px-6">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="text-center mb-14">
+      <h2 class="text-3xl font-bold text-green-700 mb-3">
+        Panduan Haji & Umroh
+      </h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        Panduan ibadah lengkap untuk membantu jamaah menjalankan ibadah
+        sesuai tuntunan dan penuh kekhusyukan.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+
+      <!-- Umroh -->
+      <a href="/web/panduan_umroh.php"
+         class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition block">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center">
+            <i class="fas fa-kaaba text-white text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">
+              Panduan Umroh
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Tata cara, doa, dan tips umroh sesuai Sunnah Nabi ﷺ.
+            </p>
+          </div>
+        </div>
+      </a>
+
+      <!-- Haji -->
+      <a href="/web/panduan-haji.php"
+         class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition block">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center">
+            <i class="fas fa-mosque text-white text-2xl"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold text-gray-800">
+              Panduan Haji
+            </h3>
+            <p class="text-gray-600 text-sm">
+              Rukun, wajib, dan sunnah haji lengkap & mudah dipahami.
+            </p>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
 
 
     <!-- Footer -->

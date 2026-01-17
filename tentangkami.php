@@ -60,24 +60,35 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
     </div>
   </nav>
 
-  <section class="relative h-screen">
-    <img src="./public/images/poster3.jpg" class="absolute inset-0 w-full h-full object-cover" />
-    <div class="absolute inset-0 bg-black/50"></div>
+  <section class="relative h-[420px] md:h-[480px] overflow-hidden flex items-center justify-center">
 
-    <div class="relative z-10 flex h-full items-center justify-center text-center px-4">
-      <div class="text-white max-w-3xl">
-        <h1 class="text-3xl md:text-5xl font-bold">
-          Umroh 2025–2026 Lebih Nyaman & Resmi
-        </h1>
-        <p class="mt-3 text-gray-200">
-          Perjalanan umrah nyaman bersama travel berizin resmi
-        </p>
-        <a href="#" class="inline-block mt-6 border px-6 py-2 rounded hover:bg-white hover:text-black">
-          Selengkapnya...
-        </a>
-      </div>
-    </div>
-  </section>
+  <!-- Slides -->
+  <div class="absolute inset-0">
+    <img src="assets/img/bg_galeri.jpg"
+         class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
+    <img src="assets/img/LT_contak.jpg"
+         class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+  </div>
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 text-center text-white px-6">
+  <span
+        class="inline-block mb-5 px-6 py-2 rounded-full bg-green-600/90 text-sm font-semibold tracking-wide shadow-lg">
+        ✨ Layanan Resmi Umroh & Haji
+      </span>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4 leading-tight drop-shadow-lg">
+        Hubungi Kami
+      </h1>
+      <p class="max-w-2xl mx-auto text-gray-100 text-lg leading-relaxed drop-shadow">
+        Kami siap membantu perjalanan ibadah Umroh & Haji Anda dengan pelayanan
+        <span class="font-semibold text-white">aman, nyaman, dan terpercaya</span>
+      </p>
+  </div>
+
+</section>
 
   <!-- PROFIL -->
   <section class="container mx-auto px-4 py-16">
@@ -144,25 +155,106 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
     </div>
   </section>
 
-  <!-- Jumlah terdaftar -->
-  <section class="bg-green-700 py-12">
-    <div class="max-w-7xl mx-auto px-4 text-center text-white">
+  <section class="bg-white py-20 px-6">
+  <div class="max-w-7xl mx-auto">
 
-      <h2 class="text-xl font-semibold mb-2">
-        Jumlah Jamaah Terdaftar
+    <!-- Heading -->
+    <div class="text-center mb-16">
+      <h2 class="text-3xl md:text-4xl font-bold text-green-700 mb-4">
+        Kenapa Memilih Sakha Diamond?
       </h2>
-
-      <p class="text-5xl font-bold mb-4">
-        70
+      <p class="text-gray-600 max-w-3xl mx-auto">
+        Menghadirkan pengalaman ibadah yang bermakna melalui pelayanan yang
+        profesional, amanah, dan penuh kasih.
       </p>
+    </div>
 
-      <p class="max-w-xl mx-auto text-green-100">
-        Jamaah yang telah mempercayakan perjalanan ibadah Umroh
-        bersama kami secara online dan offline.
-      </p>
+    <!-- Cards -->
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <!-- Card -->
+      <div class="bg-white rounded-xl shadow-md p-6 flex gap-4 hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-lg border-2 border-green-600 flex items-center justify-center text-green-600">
+          <i class="fas fa-file-alt text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-1">LEGAL</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Memiliki izin resmi sebagai Penyelenggara Perjalanan Ibadah Umroh (PPIU)
+            dari Kementerian Agama RI.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex gap-4 hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-lg border-2 border-green-600 flex items-center justify-center text-green-600">
+          <i class="fas fa-heart text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-1">Amanah</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Sakha Diamond telah melayani ribuan jamaah umroh & haji dengan
+            kenyamanan dan kepuasan sebagai prioritas utama.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex gap-4 hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-lg border-2 border-green-600 flex items-center justify-center text-green-600">
+          <i class="fas fa-handshake text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-1">Komitmen</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Informasi paket transparan, sesuai deskripsi, dan tidak ada biaya
+            tersembunyi.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex gap-4 hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-lg border-2 border-green-600 flex items-center justify-center text-green-600">
+          <i class="fas fa-users text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-1">Pembimbing</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Dibimbing oleh tim profesional sesuai Sunnah Nabi ﷺ dengan penuh
+            kesabaran dan kasih sayang.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex gap-4 hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-lg border-2 border-green-600 flex items-center justify-center text-green-600">
+          <i class="fas fa-comments text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-1">Jaringan</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Agen resmi tersebar di berbagai kota di Indonesia serta layanan
+            konsultasi online.
+          </p>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl shadow-md p-6 flex gap-4 hover:shadow-lg transition">
+        <div class="w-14 h-14 rounded-lg border-2 border-green-600 flex items-center justify-center text-green-600">
+          <i class="fas fa-hotel text-2xl"></i>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg text-gray-800 mb-1">Fasilitas</h3>
+          <p class="text-gray-600 text-sm leading-relaxed">
+            Fasilitas terbaik sesuai paket, dengan opsi upgrade fleksibel sesuai
+            kebutuhan jamaah.
+          </p>
+        </div>
+      </div>
 
     </div>
-  </section>
+  </div>
+</section>
+
   <!-- PETA -->
   <section class="bg-gray-100 py-16">
     <div class="max-w-5xl mx-auto px-4 text-center">
@@ -284,7 +376,18 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
       </div>
     </div>
   </footer>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const slides = document.querySelectorAll(".hero-slide");
+  let current = 0;
 
+  setInterval(() => {
+    slides[current].classList.replace("opacity-100", "opacity-0");
+    current = (current + 1) % slides.length;
+    slides[current].classList.replace("opacity-0", "opacity-100");
+  }, 3000);
+});
+</script>
 </body>
 
 </html>

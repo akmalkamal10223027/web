@@ -21,34 +21,62 @@ $data = mysqli_query($conn, "SELECT * FROM semua_paket ORDER BY id DESC");
 
 <!-- ================= NAVBAR ================= -->
 <nav class="bg-white shadow sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between py-3 px-6">
+    <div class="container mx-auto flex items-center justify-between py-3 px-6">
 
-    <!-- Logo -->
-    <a href="index.php" class="flex items-center gap-3">
-      <img src="./public/logo/logo2.png" alt="Logo Sakha Diamond" class="h-12">
-    </a>
-
-    <!-- Menu -->
-    <ul class="hidden md:flex gap-6 font-medium">
-      <li><a href="index.php" class="hover:text-green-700"><i class="fas fa-home mr-1"></i>Home</a></li>
-      <li><a href="Tentangkami.php" class="hover:text-green-700"><i class="fas fa-users mr-1"></i>Tentang Kami</a></li>
-      <li><a href="semua_paket.php" class="text-green-700 font-semibold"><i class="fas fa-box mr-1"></i>Paket</a></li>
-      <li><a href="galeri.php" class="hover:text-green-700"><i class="fas fa-images mr-1"></i>Galeri</a></li>
-      <li><a href="kontak.php" class="hover:text-green-700"><i class="fas fa-phone mr-1"></i>Kontak</a></li>
-    </ul>
-
-    <!-- Sosial -->
-    <div class="flex gap-3">
-      <a href="#" class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center">
-        <i class="fab fa-instagram"></i>
+      <!-- Logo -->
+      <a href="index.php" class="flex items-center gap-3">
+        <img src="./public/logo/logo2.png" alt="Logo Sakhadiamond" width="48" height="48" class="h-12 w-auto" />
       </a>
-      <a href="#" class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center">
-        <i class="fab fa-tiktok"></i>
-      </a>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex gap-6 font-medium">
+
+        <li>
+          <a href="index.php" class="hover:text-green-700 transition flex items-center gap-1">
+            <i class="fas fa-home text-sm"></i> Home
+          </a>
+        </li>
+
+        <li>
+          <a href="Tentangkami.php" class="hover:text-green-700 transition flex items-center gap-1">
+            <i class="fas fa-users text-sm"></i> Tentang Kami
+          </a>
+        </li>
+
+        <li>
+          <a href="semua paket.php" class="hover:text-green-700 transition flex items-center gap-1">
+            <i class="fas fa-box text-sm"></i> semua paket
+          </a>
+        </li>
+
+        <li>
+          <a href="galeri.php" class="hover:text-green-700 transition flex items-center gap-1">
+            <i class="fas fa-images text-sm"></i> Galeri
+          </a>
+        </li>
+
+        <li>
+          <a href="kontak.php" class="hover:text-green-700 transition flex items-center gap-1">
+            <i class="fas fa-phone text-sm"></i> Kontak
+          </a>
+        </li>
+      </ul>
+
+      <!-- Icons -->
+      <div class="flex gap-3">
+        <a href="https://www.instagram.com/alghifariii._29?igsh=b2pmamtteXRmYnE4/" target="_blank"
+          class="h-8 w-8 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="https://www.tiktok.com/@cuawww34?_r=1&_t=ZS-92tbaxJFXa1" target="_blank"
+          class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
+          <i class="fab fa-tiktok"></i>
+        </a>
+      </div>
+
     </div>
-
-  </div>
-</nav>
+  </nav>
 
 <!-- ================= HERO SLIDER ================= -->
 <section class="relative h-[420px] md:h-[480px] overflow-hidden flex items-center justify-center">
