@@ -91,12 +91,12 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
 </section>
 
   <!-- PROFIL -->
-  <section class="container mx-auto px-4 py-16">
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center bg-white rounded-3xl shadow-lg p-10">
+  <section class="container mx-auto px-24 py-16">
+    <div class="flex items-center justify-between gap-8 bg-white rounded-3xl shadow-lg p-10">
 
       <!-- TEKS -->
-      <div>
-        <span class="inline-block mb-3 px-4 py-1 rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+      <div class="w-1/2 flex flex-col gap-4 justify-between">
+        <span class="w-max py-2 px-4 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs font-semibold">
           Tentang Kami
         </span>
 
@@ -110,10 +110,10 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
       </div>
 
       <!-- GAMBAR -->
-      <div class="flex justify-center relative">
-        <div class="absolute -top-6 -left-6 w-24 h-24 bg-green-100 rounded-2xl -z-10"></div>
+      <div class="w-1/2 rounded-lg overflow-hidden">
+        <!-- <div class="absolute -top-6 -left-6 w-24 h-24 bg-green-100 rounded-2xl -z-10"></div> -->
 
-        <img src="assets/img/<?= $data['gambar']; ?>" class="rounded-2xl shadow-xl max-w-md w-full object-cover"
+        <img src="assets/img/<?= $data['gambar']; ?>" class="object-cover w-full"
           alt="Tentang Kami" />
       </div>
 
