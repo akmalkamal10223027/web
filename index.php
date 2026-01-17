@@ -205,7 +205,7 @@ $data = mysqli_query(
 <body class="bg-gray-50 text-gray-700">
 
   <!-- Navbar -->
-  <nav class="bg-white shadow sticky top-0 z-50">
+  <nav class="bg-white shadow sticky top-0 z-50 px-24">
     <div class="container mx-auto flex items-center justify-between py-3 px-6">
 
       <!-- Logo -->
