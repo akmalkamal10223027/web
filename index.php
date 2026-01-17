@@ -385,12 +385,12 @@ $data = mysqli_query(
       </div>
     </section>
     <!-- Statistics -->
-    <div class="grid grid-cols-2 gap-4 mt-8 w-full">
-      <div class="text-center p-4 bg-white rounded-lg shadow">
+    <div class="grid grid-cols-2 gap-4 mt-8 w-full px-24">
+      <div class="text-center py-6 bg-white rounded-lg shadow">
         <div class="text-2xl font-bold text-green-600">500+</div>
         <div class="text-sm text-gray-600">Jamaah Terlayani</div>
       </div>
-      <div class="text-center p-4 bg-white rounded-lg shadow">
+      <div class="text-center py-6 bg-white rounded-lg shadow">
         <div class="text-2xl font-bold text-green-600">3+</div>
         <div class="text-sm text-gray-600">Tahun Pengalaman</div>
       </div>
