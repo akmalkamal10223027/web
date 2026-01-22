@@ -62,20 +62,20 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
 
   <section class="relative h-[420px] md:h-[480px] overflow-hidden flex items-center justify-center">
 
-  <!-- Slides -->
-  <div class="absolute inset-0">
-    <img src="assets/img/bg_galeri.jpg"
-         class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
-    <img src="assets/img/LT_contak.jpg"
-         class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
-  </div>
+    <!-- Slides -->
+    <div class="absolute inset-0">
+      <img src="assets/img/bg_galeri.jpg"
+        class="hero-slide absolute inset-0 w-full h-full object-cover opacity-100 transition-opacity duration-1000">
+      <img src="assets/img/LT_contak.jpg"
+        class="hero-slide absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-1000">
+    </div>
 
-  <!-- Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/40"></div>
 
-  <!-- Content -->
-  <div class="relative z-10 text-center text-white px-6">
-  <span
+    <!-- Content -->
+    <div class="relative z-10 text-center text-white px-6">
+      <span
         class="inline-block mb-5 px-6 py-2 rounded-full bg-green-600/90 text-sm font-semibold tracking-wide shadow-lg">
         ✨ Layanan Resmi Umroh & Haji
       </span>
@@ -86,9 +86,9 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
         Kami siap membantu perjalanan ibadah Umroh & Haji Anda dengan pelayanan
         <span class="font-semibold text-white">aman, nyaman, dan terpercaya</span>
       </p>
-  </div>
+    </div>
 
-</section>
+  </section>
 
   <!-- PROFIL -->
   <section class="container mx-auto px-24 py-16">
@@ -96,7 +96,8 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
 
       <!-- TEKS -->
       <div class="w-1/2 flex flex-col gap-4 justify-between">
-        <span class="w-max py-2 px-4 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs font-semibold">
+        <span
+          class="w-max py-2 px-4 flex items-center justify-center rounded-full bg-green-100 text-green-700 text-xs font-semibold">
           Tentang Kami
         </span>
 
@@ -113,8 +114,7 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
       <div class="w-1/2 rounded-lg overflow-hidden">
         <!-- <div class="absolute -top-6 -left-6 w-24 h-24 bg-green-100 rounded-2xl -z-10"></div> -->
 
-        <img src="assets/img/<?= $data['gambar']; ?>" class="object-cover w-full"
-          alt="Tentang Kami" />
+        <img src="assets/img/<?= $data['gambar']; ?>" class="object-cover w-full" alt="Tentang Kami" />
       </div>
 
     </div>
@@ -155,7 +155,40 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
     </div>
   </section>
 
-  <section class="bg-white py-20 px-6">
+  <section class="max-w-7xl mx-auto px-6 py-16">
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+
+      <!-- Gambar -->
+      <div class="flex justify-center">
+        <div class="bg-green-500 rounded-3xl p-6">
+          <img src="./public/images/Selamat Haji dan Umroh.jpg" class="w-72">
+        </div>
+      </div>
+
+      <!-- Konten -->
+      <div>
+        <p class="text-gray-600 leading-relaxed mb-6">
+          Kepuasan jamaah adalah pondasi utama di PaiUmroh Travel. Kami memandang
+          setiap jamaah sebagai tamu yang istimewa dan layak mendapatkan pengalaman
+          ibadah yang membawa sukacita. Bersama kami, jamaah bukan sekedar pelanggan,
+          melainkan rekan dalam membentuk kenangan tak terlupakan selama menunaikan
+          ibadah di Tanah Suci.
+        </p>
+
+        <a href="#" class="inline-block bg-green-700 text-white px-6 py-3 rounded-full
+                  hover:bg-green-800 transition">
+          Lihat Company Profile Kami
+        </a>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+</html>
+
+
+<section class="bg-white py-20 px-6">
   <div class="max-w-7xl mx-auto">
 
     <!-- Heading -->
@@ -255,138 +288,138 @@ $data = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM tentang_kami LIMIT
   </div>
 </section>
 
-  <!-- PETA -->
-  <section class="bg-gray-100 py-16">
-    <div class="max-w-5xl mx-auto px-4 text-center">
+<!-- PETA -->
+<section class="bg-gray-100 py-16">
+  <div class="max-w-5xl mx-auto px-4 text-center">
 
-      <!-- Judul -->
-      <h2 class="text-3xl font-bold text-green-800 mb-4">
-        Lokasi Kantor Kami
-      </h2>
+    <!-- Judul -->
+    <h2 class="text-3xl font-bold text-green-800 mb-4">
+      Lokasi Kantor Kami
+    </h2>
 
-      <!-- Deskripsi -->
-      <p class="text-gray-700 leading-relaxed text-base max-w-3xl mx-auto mb-10">
-        Kami dari <span class="font-semibold text-green-800">Pusat Haji & Umroh Indonesia</span> saat ini
-        berkantor di
-        <span class="font-medium">
-          Jl. Candi Borobudur No.1 A, Pd. Benda, Kec. Pamulang, Kota Tangerang Selatan, Banten 15416
-        </span>.
-        <br><br>
-        Alhamdulillah, dengan adanya layanan online melalui website
-        <span class="font-semibold text-green-700">pusathajiumroh.id</span>,
-        kami siap melayani jamaah dari seluruh wilayah Indonesia.
-        <br><br>
-        <span class="italic">
-          In Syaa Allah dengan izin Allah, kami melayani jamaah di seluruh nusantara tercinta.
-        </span>
+    <!-- Deskripsi -->
+    <p class="text-gray-700 leading-relaxed text-base max-w-3xl mx-auto mb-10">
+      Kami dari <span class="font-semibold text-green-800">Pusat Haji & Umroh Indonesia</span> saat ini
+      berkantor di
+      <span class="font-medium">
+        Jl. Candi Borobudur No.1 A, Pd. Benda, Kec. Pamulang, Kota Tangerang Selatan, Banten 15416
+      </span>.
+      <br><br>
+      Alhamdulillah, dengan adanya layanan online melalui website
+      <span class="font-semibold text-green-700">pusathajiumroh.id</span>,
+      kami siap melayani jamaah dari seluruh wilayah Indonesia.
+      <br><br>
+      <span class="italic">
+        In Syaa Allah dengan izin Allah, kami melayani jamaah di seluruh nusantara tercinta.
+      </span>
+    </p>
+
+    <!-- MAP -->
+    <div class="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-xl border">
+
+      <iframe
+        src="https://www.google.com/maps?q=Jl.%20Candi%20Borobudur%20No.1%20A%20Pamulang&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+
+      <!-- Tombol Google Maps -->
+      <a href="https://maps.app.goo.gl/dQAYdpYHuNnBJVJK9" target="_blank"
+        class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg transition">
+        📍 Buka di Google Maps
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-24">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-4 gap-8">
+
+      <div class="col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <img src="./public/logo/logo2.png" alt="Sakha Diamond Logo" class="h-15 w-12" />
+          <div>
+            <h3 class="font-bold text-xl text-green-400">Sakha Diamond</h3>
+            <p class="text-sm text-gray-400">Travel Haji & Umroh Terpercaya</p>
+          </div>
+        </div>
+
+        <p class="text-gray-300 mb-4 leading-relaxed">
+          Melayani perjalanan ibadah Haji & Umroh dengan kenyamanan dan keikhlasan sejak 2023.
+        </p>
+
+        <div class="flex gap-3">
+          <a href="" target="_blank"
+            class="w-10 h-10 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110">
+            <i class="fab fa-tiktok text-white"></i>
+          </a>
+          <a href="" target="_blank"
+            class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110">
+            <i class="fab fa-instagram text-white"></i>
+          </a>
+          <a href="https://wa.me/6282130938060" target="_blank"
+            class="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center transition hover:scale-110">
+            <i class="fab fa-whatsapp text-white"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-lg mb-4 text-green-400">Paket Populer</h4>
+        <ul class="space-y-2 text-gray-300">
+          <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
+                class="fas fa-mosque text-xs"></i> Umrah Reguler</a></li>
+          <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
+                class="fas fa-globe-europe text-xs"></i> Umrah Plus Turki</a></li>
+          <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
+                class="fas fa-city text-xs"></i> Umrah Private</a></li>
+          <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
+                class="fas fa-kaaba text-xs"></i> Haji Khusus</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-semibold text-lg mb-4 text-green-400">Kontak</h4>
+        <ul class="space-y-3 text-gray-300">
+          <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400"></i><span>+62 821
+              1908 1443</span></li>
+          <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400"></i><span>+62 817
+              7926 2637</span></li>
+          <li class="flex items-center gap-2"><i
+              class="fas fa-envelope text-green-400"></i><span>sakhadiamond.com</span></li>
+          <li class="flex items-center gap-2">
+            <i class="fas fa-map-marker-alt text-green-400"></i>
+            <span>Cipasung</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+      <p class="text-gray-400">
+        &copy; 2025 Sakha Diamond. All rights reserved.
       </p>
-
-      <!-- MAP -->
-      <div class="relative w-full h-[420px] rounded-2xl overflow-hidden shadow-xl border">
-
-        <iframe
-          src="https://www.google.com/maps?q=Jl.%20Candi%20Borobudur%20No.1%20A%20Pamulang&t=&z=15&ie=UTF8&iwloc=&output=embed"
-          class="w-full h-full border-0" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-
-        <!-- Tombol Google Maps -->
-        <a href="https://maps.app.goo.gl/dQAYdpYHuNnBJVJK9" target="_blank"
-          class="absolute bottom-4 left-1/2 -translate-x-1/2 bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full text-sm font-semibold shadow-lg transition">
-          📍 Buka di Google Maps
-        </a>
-
-      </div>
+      <p class="text-sm text-gray-500 mt-2">
+        <i class="fas fa-certificate text-green-400 mr-1"></i>
+        Terdaftar resmi dan berizin lengkap
+      </p>
     </div>
-  </section>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".hero-slide");
+    let current = 0;
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-12 px-24">
-    <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-4 gap-8">
-
-        <div class="col-span-2">
-          <div class="flex items-center gap-3 mb-4">
-            <img src="./public/logo/logo2.png" alt="Sakha Diamond Logo" class="h-15 w-12" />
-            <div>
-              <h3 class="font-bold text-xl text-green-400">Sakha Diamond</h3>
-              <p class="text-sm text-gray-400">Travel Haji & Umroh Terpercaya</p>
-            </div>
-          </div>
-
-          <p class="text-gray-300 mb-4 leading-relaxed">
-            Melayani perjalanan ibadah Haji & Umroh dengan kenyamanan dan keikhlasan sejak 2023.
-          </p>
-
-          <div class="flex gap-3">
-            <a href="" target="_blank"
-              class="w-10 h-10 bg-black hover:bg-gray-800 rounded-lg flex items-center justify-center transition hover:scale-110">
-              <i class="fab fa-tiktok text-white"></i>
-            </a>
-            <a href="" target="_blank"
-              class="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg flex items-center justify-center transition hover:scale-110">
-              <i class="fab fa-instagram text-white"></i>
-            </a>
-            <a href="https://wa.me/6282130938060" target="_blank"
-              class="w-10 h-10 bg-green-600 hover:bg-green-700 rounded-lg flex items-center justify-center transition hover:scale-110">
-              <i class="fab fa-whatsapp text-white"></i>
-            </a>
-          </div>
-        </div>
-
-        <div>
-          <h4 class="font-semibold text-lg mb-4 text-green-400">Paket Populer</h4>
-          <ul class="space-y-2 text-gray-300">
-            <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
-                  class="fas fa-mosque text-xs"></i> Umrah Reguler</a></li>
-            <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
-                  class="fas fa-globe-europe text-xs"></i> Umrah Plus Turki</a></li>
-            <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
-                  class="fas fa-city text-xs"></i> Umrah Private</a></li>
-            <li><a href="#paket" class="hover:text-green-400 transition flex items-center gap-2"><i
-                  class="fas fa-kaaba text-xs"></i> Haji Khusus</a></li>
-          </ul>
-        </div>
-
-        <div>
-          <h4 class="font-semibold text-lg mb-4 text-green-400">Kontak</h4>
-          <ul class="space-y-3 text-gray-300">
-            <li class="flex items-center gap-2"><i class="fas fa-phone text-green-400"></i><span>+62 821
-                1908 1443</span></li>
-            <li class="flex items-center gap-2"><i class="fab fa-whatsapp text-green-400"></i><span>+62 817
-                7926 2637</span></li>
-            <li class="flex items-center gap-2"><i
-                class="fas fa-envelope text-green-400"></i><span>sakhadiamond.com</span></li>
-            <li class="flex items-center gap-2">
-              <i class="fas fa-map-marker-alt text-green-400"></i>
-              <span>Cipasung</span>
-            </li>
-          </ul>
-        </div>
-
-      </div>
-
-      <div class="border-t border-gray-700 mt-8 pt-8 text-center">
-        <p class="text-gray-400">
-          &copy; 2025 Sakha Diamond. All rights reserved.
-        </p>
-        <p class="text-sm text-gray-500 mt-2">
-          <i class="fas fa-certificate text-green-400 mr-1"></i>
-          Terdaftar resmi dan berizin lengkap
-        </p>
-      </div>
-    </div>
-  </footer>
-  <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const slides = document.querySelectorAll(".hero-slide");
-  let current = 0;
-
-  setInterval(() => {
-    slides[current].classList.replace("opacity-100", "opacity-0");
-    current = (current + 1) % slides.length;
-    slides[current].classList.replace("opacity-0", "opacity-100");
-  }, 3000);
-});
+    setInterval(() => {
+      slides[current].classList.replace("opacity-100", "opacity-0");
+      current = (current + 1) % slides.length;
+      slides[current].classList.replace("opacity-0", "opacity-100");
+    }, 3000);
+  });
 </script>
 </body>
 
