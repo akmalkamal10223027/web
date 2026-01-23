@@ -43,8 +43,7 @@ if (!$p) {
 
             <!-- Logo -->
             <a href="index.php" class="flex items-center gap-3">
-                <img src="./public/images/logo2.png" alt="Logo Sakhadiamond" width="48" height="48"
-                    class="h-12 w-auto" />
+                <img src="./public/logo/logo2.png" alt="Logo Sakhadiamond" width="48" height="48" class="h-12 w-auto" />
             </a>
 
             <!-- Menu -->
@@ -101,10 +100,6 @@ if (!$p) {
     <!-- HEADER -->
     <section class="bg-white border-b">
         <div class="max-w-7xl mx-auto px-6 py-10">
-            <a href="index.php" class="text-green-600 hover:underline flex items-center gap-2 mb-4">
-                <i class="fas fa-arrow-left"></i> Kembali ke Paket Umroh
-            </a>
-
             <h1 class="text-3xl font-bold text-green-700">
                 <?= htmlspecialchars($p['judul']); ?>
             </h1>

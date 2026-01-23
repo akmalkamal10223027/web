@@ -428,105 +428,103 @@ $data = mysqli_query(
         </span>
       </p>
     </section>
-<!-- Section Tentang Kami -->
-<section id="about" class="bg-gradient-to-br from-gray-50 to-white py-20 px-6">
-  <div class="max-w-6xl mx-auto">
+    <!-- Section Tentang Kami -->
+    <section id="about" class="bg-gradient-to-br from-gray-50 to-white py-20 px-6">
+      <div class="max-w-6xl mx-auto">
 
-    <!-- Header -->
-    <div class="text-center mb-14">
-      <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
-        <i class="fas fa-users text-2xl text-green-600"></i>
-      </div>
-      <h2 class="text-3xl font-bold text-green-700 mb-3">
-        Tentang sakhadiamond
-      </h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Dipercaya ribuan jamaah sejak 2023
-      </p>
-    </div>
-
-    <!-- Grid -->
-    <div class="grid md:grid-cols-2 gap-14 items-center">
-
-      <!-- Kolom Kiri -->
-      <div class="space-y-8">
-
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
-            <i class="fas fa-history text-green-600"></i> Sejarah Kami
-          </h3>
-
-          <p class="text-gray-600 leading-relaxed text-justify">
-            sakhadiamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
-            <span class="font-semibold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan.
-            Filosofi pelayanan kami:
-            <span class="italic font-medium text-green-700">
-              "Umrah mudah, penuh berkah"
-            </span>.
+        <!-- Header -->
+        <div class="text-center mb-14">
+          <div class="inline-flex items-center justify-center w-16 h-16 bg-green-100 rounded-full mb-4 mx-auto">
+            <i class="fas fa-users text-2xl text-green-600"></i>
+          </div>
+          <h2 class="text-3xl font-bold text-green-700 mb-3">
+            Tentang sakhadiamond
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Dipercaya ribuan jamaah sejak 2023
           </p>
         </div>
 
-        <div>
-          <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
-            <i class="fas fa-check-circle text-green-600"></i> Keunggulan Kami
-          </h3>
+        <!-- Grid -->
+        <div class="grid md:grid-cols-2 gap-14 items-center">
 
-          <div class="grid gap-4">
-            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-user-tie text-white"></i>
-              </div>
-              <span class="text-gray-700">Tim berpengalaman & profesional</span>
+          <!-- Kolom Kiri -->
+          <div class="space-y-8">
+
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center gap-2">
+                <i class="fas fa-history text-green-600"></i> Sejarah Kami
+              </h3>
+
+              <p class="text-gray-600 leading-relaxed text-justify">
+                sakhadiamond berdiri sejak 2023, berkomitmen menghadirkan perjalanan ibadah
+                <span class="font-semibold">Haji & Umroh</span> yang nyaman, aman, dan penuh keikhlasan.
+                Filosofi pelayanan kami:
+                <span class="italic font-medium text-green-700">
+                  "Umrah mudah, penuh berkah"
+                </span>.
+              </p>
             </div>
 
-            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-hands-helping text-white"></i>
-              </div>
-              <span class="text-gray-700">Pendampingan ibadah dari awal hingga akhir</span>
-            </div>
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center gap-2">
+                <i class="fas fa-check-circle text-green-600"></i> Keunggulan Kami
+              </h3>
 
-            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-network-wired text-white"></i>
-              </div>
-              <span class="text-gray-700">Jaringan hotel & maskapai terbaik</span>
-            </div>
+              <div class="grid gap-4">
+                <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                    <i class="fas fa-user-tie text-white"></i>
+                  </div>
+                  <span class="text-gray-700">Tim berpengalaman & profesional</span>
+                </div>
 
-            <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
-              <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <i class="fas fa-shield-alt text-white"></i>
+                <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                    <i class="fas fa-hands-helping text-white"></i>
+                  </div>
+                  <span class="text-gray-700">Pendampingan ibadah dari awal hingga akhir</span>
+                </div>
+
+                <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                    <i class="fas fa-network-wired text-white"></i>
+                  </div>
+                  <span class="text-gray-700">Jaringan hotel & maskapai terbaik</span>
+                </div>
+
+                <div class="flex items-center gap-4 p-4 bg-green-50 rounded-xl">
+                  <div class="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-white"></i>
+                  </div>
+                  <span class="text-gray-700">Terdaftar resmi & berizin lengkap</span>
+                </div>
               </div>
-              <span class="text-gray-700">Terdaftar resmi & berizin lengkap</span>
             </div>
           </div>
-        </div>
-      </div>
 
-      <!-- Kolom Kanan -->
-      <div class="flex flex-col items-center text-center">
-        <div class="relative mb-6">
-          <img
-            src="./public/images/foto1.jpeg"
-            alt="Owner Sakha Diamond"
-            class="h-64 w-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition"
-          />
+          <!-- Kolom Kanan -->
+          <div class="flex flex-col items-center text-center">
+            <div class="relative mb-6">
+              <img src="./public/images/foto1.jpeg" alt="Owner Sakha Diamond"
+                class="h-64 w-64 object-cover rounded-2xl shadow-lg hover:scale-105 transition" />
 
-          <div class="absolute -top-4 -right-4 w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-md">
-            <i class="fas fa-certificate text-white text-lg"></i>
+              <div
+                class="absolute -top-4 -right-4 w-14 h-14 bg-green-600 rounded-full flex items-center justify-center shadow-md">
+                <i class="fas fa-certificate text-white text-lg"></i>
+              </div>
+            </div>
+
+            <h5 class="text-sm text-gray-500">Algipari, Lc.</h5>
+            <h4 class="font-bold text-lg text-gray-800">
+              Owner PT. Sakha Diamond
+            </h4>
+            <p class="text-gray-600 text-sm">Berpengalaman 3+ tahun</p>
           </div>
+
         </div>
-
-        <h5 class="text-sm text-gray-500">Algipari, Lc.</h5>
-        <h4 class="font-bold text-lg text-gray-800">
-          Owner PT. Sakha Diamond
-        </h4>
-        <p class="text-gray-600 text-sm">Berpengalaman 3+ tahun</p>
       </div>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
 
@@ -733,7 +731,7 @@ $data = mysqli_query(
 
 
 
-    
+
 
     <!-- Testimoni -->
     <section id="testimoni" class="bg-gray-50 py-16 px-4">
@@ -786,177 +784,181 @@ $data = mysqli_query(
     <!-- SCRIPT WAJIB -->
     <script async src="https://www.instagram.com/embed.js"></script>
     <script async src="https://www.tiktok.com/embed.js"></script>
-   
+
 
     <div class="max-w-4xl mx-auto px-4 py-16">
-        <div class="text-center mb-12">
-            <h1 class="text-3xl md:text-4xl font-bold mb-4 text-green-900">Pertanyaan Umum (FAQ)</h1>
-            <p class="text-gray-500 max-w-2xl mx-auto">
-                Temukan jawaban dari pertanyaan umum seputar layanan umroh, haji, dan jelajah dunia kami. 
-                Jika Anda masih memiliki pertanyaan, tim kami siap membantu!
-            </p>
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold mb-4 text-green-900">Pertanyaan Umum (FAQ)</h1>
+        <p class="text-gray-500 max-w-2xl mx-auto">
+          Temukan jawaban dari pertanyaan umum seputar layanan umroh, haji, dan jelajah dunia kami.
+          Jika Anda masih memiliki pertanyaan, tim kami siap membantu!
+        </p>
+      </div>
+      <div class="space-y-4">
+
+        <div class="border-b border-gray-200">
+          <button
+            class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none"
+            onclick="toggleFaq(1)">
+            <span class="text-lg font-medium">Apa perbedaan antara umroh plus dan lainnya?</span>
+            <span id="icon-1"
+              class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-greeen-50 transition-all">+</span>
+          </button>
+          <div id="content-1" class="hidden pb-6 text-gray-600 leading-relaxed">
+            Umroh plus biasanya mencakup kunjungan tambahan ke negara lain seperti Turki, Mesir, atau Dubai setelah atau
+            sebelum melaksanakan ibadah Umroh di Tanah Suci.
+          </div>
         </div>
-        <div class="space-y-4">
-            
-            <div class="border-b border-gray-200">
-             <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(1)">
-                    <span class="text-lg font-medium">Apa perbedaan antara umroh plus dan lainnya?</span>
-                    <span id="icon-1" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-greeen-50 transition-all">+</span>
-                </button>
-                <div id="content-1" class="hidden pb-6 text-gray-600 leading-relaxed">
-                    Umroh plus biasanya mencakup kunjungan tambahan ke negara lain seperti Turki, Mesir, atau Dubai setelah atau sebelum melaksanakan ibadah Umroh di Tanah Suci.
-                </div>
-            </div>
 
-            <div class="border-b border-gray-200">
-                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(2)">
-                    <span class="text-lg font-medium">Apakah rute penerbangannya transit atau langsung (Direct)?</span>
-                    <span id="icon-2" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
-                </button>
-                <div id="content-2" class="hidden pb-6 text-gray-600">
-                    Kami menyediakan kedua opsi tersebut tergantung paket yang Anda pilih. Paket Reguler biasanya menggunakan penerbangan langsung (Direct) ke Jeddah atau Madinah.
-                </div>
-            </div>
-
-            <div class="border-b border-gray-200">
-                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(3)">
-                    <span class="text-lg font-medium">Siapa saja yang akan membimbing ibadah umroh?</span>
-                    <span id="icon-3" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
-                </button>
-                <div id="content-3" class="hidden pb-6 text-gray-600">
-                    Ibadah akan dibimbing oleh Mutawwif berpengalaman dan Ustadz pembimbing yang berkompeten sesuai Sunnah.
-                </div>
-            </div>
-
-            <div class="border-b border-gray-200">
-                <button class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none" onclick="toggleFaq(4)">
-                    <span class="text-lg font-medium">Apakah vaksin covid & meningitis masih berlaku untuk syarat umroh?</span>
-                    <span id="icon-4" class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
-                </button>
-                <div id="content-4" class="hidden pb-6 text-gray-600">
-                    Sesuai regulasi terbaru, vaksin Meningitis sangat dianjurkan (dan wajib untuk visa tertentu), sementara syarat vaksin Covid-19 mengikuti aturan terbaru dari pemerintah Arab Saudi.
-                </div>
-            </div>
-
+        <div class="border-b border-gray-200">
+          <button
+            class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none"
+            onclick="toggleFaq(2)">
+            <span class="text-lg font-medium">Apakah rute penerbangannya transit atau langsung (Direct)?</span>
+            <span id="icon-2"
+              class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
+          </button>
+          <div id="content-2" class="hidden pb-6 text-gray-600">
+            Kami menyediakan kedua opsi tersebut tergantung paket yang Anda pilih. Paket Reguler biasanya menggunakan
+            penerbangan langsung (Direct) ke Jeddah atau Madinah.
+          </div>
         </div>
+
+        <div class="border-b border-gray-200">
+          <button
+            class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none"
+            onclick="toggleFaq(3)">
+            <span class="text-lg font-medium">Siapa saja yang akan membimbing ibadah umroh?</span>
+            <span id="icon-3"
+              class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
+          </button>
+          <div id="content-3" class="hidden pb-6 text-gray-600">
+            Ibadah akan dibimbing oleh Mutawwif berpengalaman dan Ustadz pembimbing yang berkompeten sesuai Sunnah.
+          </div>
+        </div>
+
+        <div class="border-b border-gray-200">
+          <button
+            class="w-full py-6 flex justify-between items-center text-left hover:text-green-600 transition-colors group focus:outline-none"
+            onclick="toggleFaq(4)">
+            <span class="text-lg font-medium">Apakah vaksin covid & meningitis masih berlaku untuk syarat umroh?</span>
+            <span id="icon-4"
+              class="text-green-500 text-2xl border border-green-500 rounded-full w-8 h-8 flex items-center justify-center group-hover:bg-green-50 transition-all">+</span>
+          </button>
+          <div id="content-4" class="hidden pb-6 text-gray-600">
+            Sesuai regulasi terbaru, vaksin Meningitis sangat dianjurkan (dan wajib untuk visa tertentu), sementara
+            syarat vaksin Covid-19 mengikuti aturan terbaru dari pemerintah Arab Saudi.
+          </div>
+        </div>
+
+      </div>
     </div>
 
     <script>
-        function toggleFaq(id) {
-            const content = document.getElementById(`content-${id}`);
-            const icon = document.getElementById(`icon-${id}`);
-            
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.textContent = '-';
-                icon.classList.add('bg-green-500', 'text-white');
-            } else {
-                content.classList.add('hidden');
-                icon.textContent = '+';
-                icon.classList.remove('bg-green-500', 'text-white');
-            }
+      function toggleFaq(id) {
+        const content = document.getElementById(`content-${id}`);
+        const icon = document.getElementById(`icon-${id}`);
+
+        if (content.classList.contains('hidden')) {
+          content.classList.remove('hidden');
+          icon.textContent = '-';
+          icon.classList.add('bg-green-500', 'text-white');
+        } else {
+          content.classList.add('hidden');
+          icon.textContent = '+';
+          icon.classList.remove('bg-green-500', 'text-white');
         }
+      }
     </script>
 
-  <section class="w-full py-20 flex justify-center">
-    <div class="text-center max-w-xl">
+    <section class="w-full py-20 flex justify-center">
+      <div class="text-center max-w-xl">
 
-      <!-- Avatar group -->
-      <div class="flex justify-center mb-6">
-        <div class="flex -space-x-3">
-          <img
-            src="https://i.pravatar.cc/80?img=1"
-            class="w-12 h-12 rounded-full border-2 border-white"
-            alt="avatar 1"
-          />
-          <img
-            src="https://i.pravatar.cc/80?img=2"
-            class="w-12 h-12 rounded-full border-2 border-white"
-            alt="avatar 2"
-          />
-          <img
-            src="https://i.pravatar.cc/80?img=3"
-            class="w-12 h-12 rounded-full border-2 border-white"
-            alt="avatar 3"
-          />
+        <!-- Avatar group -->
+        <div class="flex justify-center mb-6">
+          <div class="flex -space-x-3">
+            <img src="https://i.pravatar.cc/80?img=1" class="w-12 h-12 rounded-full border-2 border-white"
+              alt="avatar 1" />
+            <img src="https://i.pravatar.cc/80?img=2" class="w-12 h-12 rounded-full border-2 border-white"
+              alt="avatar 2" />
+            <img src="https://i.pravatar.cc/80?img=3" class="w-12 h-12 rounded-full border-2 border-white"
+              alt="avatar 3" />
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="text-xl font-semibold text-gray-900 mb-2">
+          Masih ada pertanyaan?
+        </h2>
+
+        <!-- Description -->
+        <p class="text-gray-500 mb-8">
+          Tidak menemukan jawaban yang di cari? Silakan hubungi tim kami.
+        </p>
+
+        <!-- Button -->
+        <a href="kontak.php"
+          class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 ">
+          <i class="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
+          <span class="text-sm lg:text-base">Konsultasi Gratis</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Panduan -->
+    <section class="bg-green-50 py-20 px-6">
+      <div class="max-w-6xl mx-auto">
+
+        <div class="text-center mb-14">
+          <h2 class="text-3xl font-bold text-green-700 mb-3">
+            Panduan Haji & Umroh
+          </h2>
+          <p class="text-gray-600 max-w-2xl mx-auto">
+            Panduan ibadah lengkap untuk membantu jamaah menjalankan ibadah
+            sesuai tuntunan dan penuh kekhusyukan.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+
+          <!-- Umroh -->
+          <a href="/web-2/panduan_umroh.php" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition block">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center">
+                <i class="fas fa-kaaba text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Panduan Umroh
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Tata cara, doa, dan tips umroh sesuai Sunnah Nabi ﷺ.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <!-- Haji -->
+          <a href="/web-2/panduan-haji.php" class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition block">
+            <div class="flex items-center gap-4">
+              <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center">
+                <i class="fas fa-mosque text-white text-2xl"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Panduan Haji
+                </h3>
+                <p class="text-gray-600 text-sm">
+                  Rukun, wajib, dan sunnah haji lengkap & mudah dipahami.
+                </p>
+              </div>
+            </div>
+          </a>
+
         </div>
       </div>
-
-      <!-- Heading -->
-      <h2 class="text-xl font-semibold text-gray-900 mb-2">
-        Masih ada pertanyaan?
-      </h2>
-
-      <!-- Description -->
-      <p class="text-gray-500 mb-8">
-        Tidak menemukan jawaban yang di cari? Silakan hubungi tim kami.
-      </p>
-
-      <!-- Button -->
-      <a href="kontak.php"
-                class="group bg-transparent border-2 border-green-300 hover:bg-green-700 hover:text-green-900 text-green-300 font-bold py-3 lg:py-4 px-6 lg:px-8 rounded-full transition-all flex items-center justify-center gap-3 ">
-                <i class="fab fa-whatsapp group-hover:scale-110 transition-transform"></i>
-                <span class="text-sm lg:text-base">Konsultasi Gratis</span>
-              </a>
-
-    </div>
-  </section>
-
-  <!-- Panduan -->
-  <section class="bg-green-50 py-20 px-6">
-  <div class="max-w-6xl mx-auto">
-
-    <div class="text-center mb-14">
-      <h2 class="text-3xl font-bold text-green-700 mb-3">
-        Panduan Haji & Umroh
-      </h2>
-      <p class="text-gray-600 max-w-2xl mx-auto">
-        Panduan ibadah lengkap untuk membantu jamaah menjalankan ibadah
-        sesuai tuntunan dan penuh kekhusyukan.
-      </p>
-    </div>
-
-    <div class="grid md:grid-cols-2 gap-8">
-
-      <!-- Umroh -->
-      <a href="/web/panduan_umroh.php"
-         class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition block">
-        <div class="flex items-center gap-4">
-          <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center">
-            <i class="fas fa-kaaba text-white text-2xl"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">
-              Panduan Umroh
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Tata cara, doa, dan tips umroh sesuai Sunnah Nabi ﷺ.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <!-- Haji -->
-      <a href="/web/panduan-haji.php"
-         class="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition block">
-        <div class="flex items-center gap-4">
-          <div class="w-14 h-14 bg-green-600 rounded-lg flex items-center justify-center">
-            <i class="fas fa-mosque text-white text-2xl"></i>
-          </div>
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">
-              Panduan Haji
-            </h3>
-            <p class="text-gray-600 text-sm">
-              Rukun, wajib, dan sunnah haji lengkap & mudah dipahami.
-            </p>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
+    </section>
 
 
     <!-- Footer -->
