@@ -35,11 +35,9 @@ if (!$p) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
-<body class="bg-gray-50">
+<body class="bg-gray-50 text-gray-800">
 
-    <!-- navbar -->
-
-
+    <!-- NAVBAR -->
     <nav class="bg-white shadow sticky top-0 z-50">
         <div class="container mx-auto flex items-center justify-between py-3 px-6">
 
@@ -89,7 +87,7 @@ if (!$p) {
                     <i class="fab fa-instagram"></i>
                 </a>
 
-                <a href="https://www.tiktok.com/@cuawww34?_r=1&_t=ZS-92tbaxJFXa11" target="_blank"
+                <a href="https://www.tiktok.com/@cuawww34?_r=1&_t=ZS-92tbaxJFXa1" target="_blank"
                     class="h-8 w-8 bg-black text-white rounded-lg flex items-center justify-center hover:scale-110 transition">
                     <i class="fab fa-tiktok"></i>
                 </a>
@@ -99,113 +97,77 @@ if (!$p) {
     </nav>
 
     <!-- HEADER -->
-    <section class="relative text-white overflow-hidden">
-
-        <!-- BACKGROUND SLIDER -->
-        <div class="absolute inset-0">
-            <div class="bg-slide bg-1"></div>
-            <div class="bg-slide bg-2"></div>
-            <div class="bg-slide bg-3"></div>
-        </div>
-
-        <!-- OVERLAY GRADIENT -->
-        <div class="absolute inset-0 bg-gradient-to-r from-green-900/90 via-green-800/80 to-emerald-700/80"></div>
-
-        <!-- ORNAMEN -->
-        <div class="absolute inset-0 opacity-10">
-            <i class="fas fa-kaaba absolute top-10 right-16 text-7xl"></i>
-            <i class="fas fa-moon absolute bottom-10 left-20 text-6xl"></i>
-        </div>
-
-        <!-- CONTENT -->
-        <div class="relative max-w-7xl mx-auto px-6 py-16">
-
-            <a href="semua paket.php"
-                class="inline-flex items-center gap-2 text-sm text-green-200 hover:text-white mb-6 transition">
-                <i class="fas fa-arrow-left text-xs"></i>
-                <span class="border-b border-green-300 border-opacity-40 hover:border-opacity-100">
-                    Kembali ke Semua Paket
-                </span>
+    <section class="bg-white border-b">
+        <div class="max-w-7xl mx-auto px-6 py-10">
+            <a href="index.php" class="text-green-600 hover:underline flex items-center gap-2 mb-4">
+                <i class="fas fa-arrow-left"></i> Kembali ke Halaman Utama
             </a>
 
-            <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight tracking-tight">
+            <h1 class="text-3xl font-bold text-green-700">
                 <?= htmlspecialchars($p['judul']); ?>
             </h1>
-
-            <div class="w-24 h-1 bg-emerald-300 rounded-full mt-4 mb-6"></div>
-
-            <p class="text-green-100 max-w-2xl text-base sm:text-lg leading-relaxed">
-                Paket Umroh & Haji terbaik dengan pelayanan premium, pembimbing berpengalaman,
-                dan kenyamanan ibadah yang maksimal.
+            <p class="text-gray-600 mt-2">
+                Paket Umroh & Haji terbaik bersama Sakha Diamond
             </p>
-
         </div>
     </section>
 
-
     <!-- DETAIL -->
-    <section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-14">
+    <section class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-14 items-start">
 
         <!-- GAMBAR -->
-        <div class="relative rounded-3xl overflow-hidden shadow-xl bg-white">
-            <img src="assets/img/<?= $p['gambar']; ?>"
-                class="w-full h-[460px] object-cover hover:scale-110 transition duration-700">
-
-            <span
-                class="absolute top-5 left-5 bg-green-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow">
-                Paket Terbaik
-            </span>
+        <div class="bg-white rounded-3xl shadow-lg p-6 flex items-center justify-center">
+            <div class="w-full h-[420px] bg-gray-100 rounded-2xl flex items-center justify-center overflow-hidden">
+                <img src="assets/img/<?= htmlspecialchars($p['gambar']); ?>" alt="<?= htmlspecialchars($p['judul']); ?>"
+                    class="max-w-full max-h-full object-contain">
+            </div>
         </div>
 
-        <!-- INFORMASI -->
-        <div class="bg-white rounded-3xl shadow-xl p-10 space-y-8">
+        <!-- INFO -->
+        <div class="bg-white rounded-3xl shadow-lg p-8 space-y-6">
 
-            <!-- HARGA -->
-            <div class="flex items-center justify-between border-b pb-6">
-                <h2 class="text-2xl font-bold text-gray-800">
-                    Detail Paket
-                </h2>
-                <div class="text-right">
-                    <p class="text-sm text-gray-500">Harga mulai dari</p>
-                    <p class="text-3xl font-extrabold text-green-700">
-                        Rp <?= number_format($p['harga'], 0, ',', '.'); ?>
-                    </p>
-                </div>
+            <!-- HEADER -->
+            <div class="flex items-center justify-between border-b pb-4">
+                <h2 class="text-2xl font-bold text-gray-800">Detail Paket</h2>
+                <span class="text-2xl font-extrabold text-green-700">
+                    Rp <?= number_format($p['harga'], 0, ',', '.'); ?>
+                </span>
             </div>
 
-            <!-- LIST DETAIL -->
-            <ul class="space-y-4 text-gray-700 text-sm">
-                <li class="flex items-center gap-4">
-                    <i class="fas fa-clock text-green-600 text-lg w-6"></i>
-                    <span><strong>Durasi:</strong> <?= htmlspecialchars($p['durasi']); ?></span>
-                </li>
+            <!-- INFO GRID -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-700">
 
-                <li class="flex items-center gap-4">
-                    <i class="fas fa-hotel text-green-600 text-lg w-6"></i>
-                    <span><strong>Hotel Makkah:</strong> <?= htmlspecialchars($p['hotel_makkah']); ?></span>
-                </li>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-clock text-green-600"></i>
+                    <span><b>Durasi:</b> <?= $p['durasi']; ?></span>
+                </div>
 
-                <li class="flex items-center gap-4">
-                    <i class="fas fa-hotel text-green-600 text-lg w-6"></i>
-                    <span><strong>Hotel Madinah:</strong> <?= htmlspecialchars($p['hotel_madinah']); ?></span>
-                </li>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-plane text-green-600"></i>
+                    <span><b>Maskapai:</b> <?= $p['maskapai']; ?></span>
+                </div>
 
-                <li class="flex items-center gap-4">
-                    <i class="fas fa-plane-departure text-green-600 text-lg w-6"></i>
-                    <span><strong>Maskapai:</strong> <?= htmlspecialchars($p['maskapai']); ?></span>
-                </li>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-hotel text-green-600"></i>
+                    <span><b>Hotel Makkah:</b> <?= $p['hotel_makkah']; ?></span>
+                </div>
 
-                <li class="flex items-center gap-4">
-                    <i class="fas fa-users text-green-600 text-lg w-6"></i>
-                    <span>
-                        <strong>Sisa Seat:</strong>
-                        <span class="text-red-600 font-semibold"><?= $p['sisa_seat']; ?></span> jamaah
-                    </span>
-                </li>
-            </ul>
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-hotel text-green-600"></i>
+                    <span><b>Hotel Madinah:</b> <?= $p['hotel_madinah']; ?></span>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                    <i class="fa-solid fa-user-group text-green-600"></i>
+                    <span><b>Sisa Seat:</b> <?= $p['sisa_seat']; ?> jamaah</span>
+                </div>
+
+            </div>
 
             <!-- CTA -->
-            <div class="pt-8 grid sm:grid-cols-2 gap-4">
+            <div class="pt-8 grid sm:grid-cols-1 md:grid-cols-3 gap-4">
+
+                <!-- DAFTAR VIA WHATSAPP -->
                 <a href="https://wa.me/6282130938060?text=Saya%20ingin%20daftar%20<?= urlencode($p['judul']); ?>"
                     target="_blank"
                     class="bg-green-600 hover:bg-green-700 text-white py-4 rounded-2xl font-bold text-center transition transform hover:-translate-y-1 shadow-lg">
@@ -213,10 +175,20 @@ if (!$p) {
                     Daftar via WA
                 </a>
 
+                <!-- DAFTAR VIA GOOGLE FORM -->
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLSegc2Gw3MBTbWq2JVCkp9UbpG-Mi_yVmPTYnPdmbWpdYVGfbA/viewform?usp=dialog"
+                    target="_blank"
                     class="border-2 border-green-600 text-green-700 py-4 rounded-2xl font-bold text-center hover:bg-green-50 transition">
-                    Daftar sekarang
+                    Daftar via Google Form
                 </a>
+
+                <!-- 🔥 DAFTAR LANGSUNG KE WEBSITE -->
+                <a href="tambah_jamaah_user.php?paket_id=<?= $p['id']; ?>"
+                    class="bg-gradient-to-r from-emerald-600 to-green-600 text-white py-4 rounded-2xl font-bold text-center hover:opacity-90 transition shadow-lg">
+                    <i class="fa-solid fa-file-pen mr-2"></i>
+                    Daftar Sekarang
+                </a>
+
             </div>
 
         </div>

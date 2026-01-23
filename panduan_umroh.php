@@ -68,140 +68,176 @@
 
     </div>
   </nav>
+<!-- ================= EXTENDED CONTENT ================= -->
 
-<section class="max-w-4xl mx-auto py-24 px-6">
+    <!-- TIMELINE UMROH -->
+    <section class="max-w-5xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-semibold text-center text-emerald-700 mb-12">
+            Alur Perjalanan Umroh
+        </h2>
 
-  <!-- Header -->
-  <div class="text-center mb-16">
-    <h1 class="text-4xl font-semibold text-emerald-700 mb-4">
-      Panduan Lengkap Umroh
-    </h1>
-    <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
-      Ringkasan tahapan ibadah Umroh.  
-      Klik setiap bagian untuk membaca penjelasan lengkap
-      secara runtut dan mudah dipahami.
-    </p>
-  </div>
+        <div class="relative border-l-2 border-emerald-200 pl-10 space-y-10">
+            <div>
+                <span
+                    class="absolute -left-3 bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">1</span>
+                <h4 class="font-semibold text-lg">Persiapan & Manasik</h4>
+                <p class="text-gray-600 mt-1">
+                    Pembekalan ibadah, dokumen, dan kesiapan fisik sebelum keberangkatan.
+                </p>
+            </div>
 
-  <!-- Accordion -->
-  <div class="space-y-5">
+            <div>
+                <span
+                    class="absolute -left-3 bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">2</span>
+                <h4 class="font-semibold text-lg">Keberangkatan ke Tanah Suci</h4>
+                <p class="text-gray-600 mt-1">
+                    Jamaah berangkat menuju Madinah atau Makkah sesuai itinerary.
+                </p>
+            </div>
 
-    <!-- Item -->
-    <details class="group bg-white border border-gray-200 rounded-2xl shadow-sm open:shadow-md transition">
-      <summary class="flex items-center justify-between px-6 py-5 cursor-pointer">
-        <div class="flex items-center gap-4">
-          <span class="text-emerald-600 font-semibold">01</span>
-          <h3 class="font-medium text-gray-800 text-lg">
-            Niat Umroh
-          </h3>
+            <div>
+                <span
+                    class="absolute -left-3 bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">3</span>
+                <h4 class="font-semibold text-lg">Pelaksanaan Ibadah Umroh</h4>
+                <p class="text-gray-600 mt-1">
+                    Ihram, Thawaf, Sa’i, dan Tahallul dengan bimbingan pembimbing resmi.
+                </p>
+            </div>
+
+            <div>
+                <span
+                    class="absolute -left-3 bg-emerald-600 text-white w-6 h-6 rounded-full flex items-center justify-center text-sm">4</span>
+                <h4 class="font-semibold text-lg">Ziarah & Kepulangan</h4>
+                <p class="text-gray-600 mt-1">
+                    Ziarah ke tempat bersejarah dan kembali ke tanah air.
+                </p>
+            </div>
         </div>
-        <svg class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"
-             fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </summary>
+    </section>
 
-      <div class="px-6 pb-6 text-gray-700 leading-relaxed">
-        Niat Umroh dilakukan dari miqat dengan mengucapkan niat
-        umroh karena Allah Ta’ala. Sejak berniat ihram, jamaah
-        mulai terikat dengan larangan-larangan ihram dan
-        dianjurkan memperbanyak talbiyah.
-      </div>
-    </details>
+    <!-- DOA DOA UMROH -->
+    <section class="bg-emerald-50 py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-semibold text-center text-emerald-700 mb-12">
+                Doa-Doa Penting Selama Umroh
+            </h2>
 
-    <!-- Item -->
-    <details class="group bg-white border border-gray-200 rounded-2xl shadow-sm open:shadow-md transition">
-      <summary class="flex items-center justify-between px-6 py-5 cursor-pointer">
-        <div class="flex items-center gap-4">
-          <span class="text-emerald-600 font-semibold">02</span>
-          <h3 class="font-medium text-gray-800 text-lg">
-            Ihram
-          </h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">Doa Niat Umroh</h4>
+                    <p class="text-gray-600 italic">
+                        Labbaika ‘umratan mutamatti’an bihâ ilal hajj.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">Doa Thawaf</h4>
+                    <p class="text-gray-600 italic">
+                        Rabbanaa aatinaa fid-dunyaa hasanah wa fil-aakhirati hasanah.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">Doa Sa’i</h4>
+                    <p class="text-gray-600 italic">
+                        Innash-shafaa wal-marwata min sya’aa’irillah.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold text-lg mb-2">Doa Tahallul</h4>
+                    <p class="text-gray-600 italic">
+                        Allahummaghfir lii dzunuubii warhamnii.
+                    </p>
+                </div>
+            </div>
         </div>
-        <svg class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"
-             fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </summary>
+    </section>
 
-      <div class="px-6 pb-6 text-gray-700 leading-relaxed">
-        Ihram adalah keadaan suci yang ditandai dengan niat
-        dan mengenakan pakaian khusus. Jamaah wajib menjaga
-        larangan-larangan ihram hingga selesai tahallul.
-      </div>
-    </details>
+    <!-- TIPS & LARANGAN -->
+    <section class="max-w-5xl mx-auto py-24 px-6">
+        <h2 class="text-3xl font-semibold text-center text-emerald-700 mb-12">
+            Tips & Larangan Selama Umroh
+        </h2>
 
-    <!-- Item -->
-    <details class="group bg-white border border-gray-200 rounded-2xl shadow-sm open:shadow-md transition">
-      <summary class="flex items-center justify-between px-6 py-5 cursor-pointer">
-        <div class="flex items-center gap-4">
-          <span class="text-emerald-600 font-semibold">03</span>
-          <h3 class="font-medium text-gray-800 text-lg">
-            Thawaf
-          </h3>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div>
+                <h4 class="font-semibold text-lg mb-4 text-green-700">Tips Jamaah</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li>✔ Perbanyak dzikir dan doa</li>
+                    <li>✔ Jaga kesehatan & hidrasi</li>
+                    <li>✔ Ikuti arahan pembimbing</li>
+                    <li>✔ Gunakan alas kaki nyaman</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold text-lg mb-4 text-red-600">Larangan Ihram</h4>
+                <ul class="space-y-3 text-gray-600">
+                    <li>✖ Memotong rambut & kuku</li>
+                    <li>✖ Menggunakan wewangian</li>
+                    <li>✖ Bertengkar & berkata kasar</li>
+                    <li>✖ Membunuh hewan</li>
+                </ul>
+            </div>
         </div>
-        <svg class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"
-             fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </summary>
+    </section>
 
-      <div class="px-6 pb-6 text-gray-700 leading-relaxed">
-        Thawaf dilakukan dengan mengelilingi Ka’bah sebanyak
-        tujuh putaran dimulai dari Hajar Aswad dengan niat ibadah.
-      </div>
-    </details>
+    <!-- PERSIAPAN UMROH -->
+    <section class="bg-gray-50 py-24 px-6">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold text-emerald-700 mb-6">
+                Persiapan Sebelum Umroh
+            </h2>
 
-    <!-- Item -->
-    <details class="group bg-white border border-gray-200 rounded-2xl shadow-sm open:shadow-md transition">
-      <summary class="flex items-center justify-between px-6 py-5 cursor-pointer">
-        <div class="flex items-center gap-4">
-          <span class="text-emerald-600 font-semibold">04</span>
-          <h3 class="font-medium text-gray-800 text-lg">
-            Sa’i
-          </h3>
+            <p class="text-gray-600 max-w-3xl mx-auto mb-12">
+                Persiapan yang matang membantu jamaah menjalankan ibadah dengan khusyuk dan nyaman.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <i class="fas fa-passport text-emerald-600 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Dokumen</h4>
+                    <p class="text-gray-600 text-sm">
+                        Paspor, visa, tiket, dan identitas.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <i class="fas fa-heartbeat text-emerald-600 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Kesehatan</h4>
+                    <p class="text-gray-600 text-sm">
+                        Vaksin, obat pribadi, dan kebugaran.
+                    </p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow">
+                    <i class="fas fa-book-quran text-emerald-600 text-3xl mb-4"></i>
+                    <h4 class="font-semibold text-lg">Ilmu & Niat</h4>
+                    <p class="text-gray-600 text-sm">
+                        Manasik dan niat ikhlas karena Allah.
+                    </p>
+                </div>
+            </div>
         </div>
-        <svg class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"
-             fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </summary>
+    </section>
 
-      <div class="px-6 pb-6 text-gray-700 leading-relaxed">
-        Sa’i dilakukan dengan berjalan antara bukit Shafa dan Marwah
-        sebanyak tujuh kali sebagai bagian dari rangkaian Umroh.
-      </div>
-    </details>
+    <!-- CTA -->
+    <section class="bg-emerald-700 py-20 px-6 text-white">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="text-3xl font-semibold mb-4">
+                Siap Berangkat Umroh Bersama Sakha Diamond?
+            </h2>
+            <p class="text-emerald-100 mb-8 max-w-2xl mx-auto">
+                Dapatkan bimbingan amanah, fasilitas terbaik, dan pelayanan profesional.
+            </p>
 
-    <!-- Item -->
-    <details class="group bg-white border border-gray-200 rounded-2xl shadow-sm open:shadow-md transition">
-      <summary class="flex items-center justify-between px-6 py-5 cursor-pointer">
-        <div class="flex items-center gap-4">
-          <span class="text-emerald-600 font-semibold">05</span>
-          <h3 class="font-medium text-gray-800 text-lg">
-            Tahallul
-          </h3>
+            <a href="kontak.php"
+                class="inline-block bg-white text-emerald-700 px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition">
+                Konsultasi Sekarang
+            </a>
         </div>
-        <svg class="w-5 h-5 text-gray-400 transition-transform group-open:rotate-180"
-             fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-        </svg>
-      </summary>
-
-      <div class="px-6 pb-6 text-gray-700 leading-relaxed">
-        Tahallul adalah mencukur atau memotong rambut sebagai
-        tanda selesainya ibadah Umroh dan keluarnya jamaah dari ihram.
-      </div>
-    </details>
-
-  </div>
-
-</section>
+    </section>
 
  <!-- Footer -->
  <footer class="bg-gray-900 text-white py-12">
